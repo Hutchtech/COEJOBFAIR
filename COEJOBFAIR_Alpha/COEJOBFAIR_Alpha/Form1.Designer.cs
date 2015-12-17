@@ -31,7 +31,7 @@
             this.btn_submit = new System.Windows.Forms.Button();
             this.lbl_test = new System.Windows.Forms.Label();
             this.lbl_test2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_id = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_submit
@@ -62,19 +62,20 @@
             this.lbl_test2.TabIndex = 2;
             this.lbl_test2.Text = "Test Label";
             // 
-            // textBox1
+            // txt_id
             // 
-            this.textBox1.Location = new System.Drawing.Point(394, 136);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.txt_id.Location = new System.Drawing.Point(394, 136);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.Size = new System.Drawing.Size(100, 20);
+            this.txt_id.TabIndex = 3;
+            this.txt_id.TextChanged += new System.EventHandler(this.txt_id_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1033, 543);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_id);
             this.Controls.Add(this.lbl_test2);
             this.Controls.Add(this.lbl_test);
             this.Controls.Add(this.btn_submit);
@@ -90,7 +91,7 @@
         private System.Windows.Forms.Button btn_submit;
         private System.Windows.Forms.Label lbl_test;
         private System.Windows.Forms.Label lbl_test2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_id;
     }
 }
 
