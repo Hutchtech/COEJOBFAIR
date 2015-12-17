@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DieCutLabel Version="8.0" Units="twips">
+	<PaperOrientation>Landscape</PaperOrientation>
+	<Id>NameBadgeCard</Id>
+	<PaperName>30856 Badge Card Label - offset</PaperName>
+	<DrawCommands>
+		<Path>
+			<FillMode>EvenOdd</FillMode>
+			<Line X1="3509" Y1="0" X2="3509" Y2="6000" />
+			<LineTo X="517" Y="6000" />
+			<Arc CenterX="432" CenterY="6000" Radius="85" StartAngle="0" EndAngle="90" />
+			<LineTo X="0" Y="5915" />
+			<LineTo X="0" Y="85" />
+			<LineTo X="432" Y="85" />
+			<Arc CenterX="432" CenterY="0" Radius="85" StartAngle="-90" EndAngle="0" />
+			<LineTo X="3509" Y="0" />
+			<RoundRectangle X="2969" Y="2640" Width="180" Height="720" Rx="120" Ry="120" />
+		</Path>
+	</DrawCommands>
+	<ObjectInfo>
+		<TextObject>
+			<Name>NAME</Name>
+			<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+			<BackColor Alpha="0" Red="255" Green="255" Blue="255" />
+			<LinkedObjectName></LinkedObjectName>
+			<Rotation>Rotation0</Rotation>
+			<IsMirrored>False</IsMirrored>
+			<IsVariable>False</IsVariable>
+			<HorizontalAlignment>Left</HorizontalAlignment>
+			<VerticalAlignment>Top</VerticalAlignment>
+			<TextFitMode>ShrinkToFit</TextFitMode>
+			<UseFullFontHeight>True</UseFullFontHeight>
+			<Verticalized>False</Verticalized>
+			<StyledText>
+				<Element>
+					<String>NAME</String>
+					<Attributes>
+						<Font Family="Arial" Size="12" Bold="False" Italic="False" Underline="False" Strikeout="False" />
+						<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+					</Attributes>
+				</Element>
+			</StyledText>
+		</TextObject>
+		<Bounds X="450" Y="705" Width="2880" Height="345" />
+	</ObjectInfo>
+	<ObjectInfo>
+		<TextObject>
+			<Name>TEXT_1</Name>
+			<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+			<BackColor Alpha="0" Red="255" Green="255" Blue="255" />
+			<LinkedObjectName></LinkedObjectName>
+			<Rotation>Rotation0</Rotation>
+			<IsMirrored>False</IsMirrored>
+			<IsVariable>False</IsVariable>
+			<HorizontalAlignment>Left</HorizontalAlignment>
+			<VerticalAlignment>Top</VerticalAlignment>
+			<TextFitMode>ShrinkToFit</TextFitMode>
+			<UseFullFontHeight>True</UseFullFontHeight>
+			<Verticalized>False</Verticalized>
+			<StyledText>
+				<Element>
+					<String>Graduation Date:</String>
+					<Attributes>
+						<Font Family="Arial" Size="12" Bold="False" Italic="False" Underline="False" Strikeout="False" />
+						<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+					</Attributes>
+				</Element>
+			</StyledText>
+		</TextObject>
+		<Bounds X="465" Y="1245" Width="1890" Height="345" />
+	</ObjectInfo>
+	<ObjectInfo>
+		<TextObject>
+			<Name>GRAD_DATE</Name>
+			<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+			<BackColor Alpha="0" Red="255" Green="255" Blue="255" />
+			<LinkedObjectName></LinkedObjectName>
+			<Rotation>Rotation0</Rotation>
+			<IsMirrored>False</IsMirrored>
+			<IsVariable>False</IsVariable>
+			<HorizontalAlignment>Left</HorizontalAlignment>
+			<VerticalAlignment>Top</VerticalAlignment>
+			<TextFitMode>ShrinkToFit</TextFitMode>
+			<UseFullFontHeight>True</UseFullFontHeight>
+			<Verticalized>False</Verticalized>
+			<StyledText>
+				<Element>
+					<String>Graduation Date:</String>
+					<Attributes>
+						<Font Family="Arial" Size="12" Bold="False" Italic="False" Underline="False" Strikeout="False" />
+						<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+					</Attributes>
+				</Element>
+			</StyledText>
+		</TextObject>
+		<Bounds X="2340" Y="1245" Width="1890" Height="345" />
+	</ObjectInfo>
+	<ObjectInfo>
+		<TextObject>
+			<Name>MAJOR</Name>
+			<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+			<BackColor Alpha="0" Red="255" Green="255" Blue="255" />
+			<LinkedObjectName></LinkedObjectName>
+			<Rotation>Rotation0</Rotation>
+			<IsMirrored>False</IsMirrored>
+			<IsVariable>False</IsVariable>
+			<HorizontalAlignment>Left</HorizontalAlignment>
+			<VerticalAlignment>Top</VerticalAlignment>
+			<TextFitMode>ShrinkToFit</TextFitMode>
+			<UseFullFontHeight>True</UseFullFontHeight>
+			<Verticalized>False</Verticalized>
+			<StyledText>
+				<Element>
+					<String>MAJOR</String>
+					<Attributes>
+						<Font Family="Arial" Size="16" Bold="False" Italic="False" Underline="False" Strikeout="False" />
+						<ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+					</Attributes>
+				</Element>
+			</StyledText>
+		</TextObject>
+		<Bounds X="795" Y="1965" Width="3690" Height="720" />
+	</ObjectInfo>
+</DieCutLabel>
