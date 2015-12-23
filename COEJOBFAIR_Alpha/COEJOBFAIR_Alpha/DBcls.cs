@@ -11,7 +11,7 @@ namespace COEJOBFAIR_Alpha
 {
     class Data_cnct : Main
     {
-        string id = "";
+        
         private class odbc_comand
         {
             OdbcCommand cmd;
@@ -80,29 +80,63 @@ namespace COEJOBFAIR_Alpha
             {
                 bool bol = true;
                 odbc_cnn test_cnn = new odbc_cnn();
+                test_cnn.getcnn().ConnectionTimeout = 7;
                 try
                 {
+                    
                     test_cnn.getcnn().Open();
                 }
                 catch (OdbcException e)
                 {
-                    string errorMessages = "";
-
-                    for (int i = 0; i < e.Errors.Count; i++)
-                    {
-                        errorMessages += "Index #" + i + "\n" +
-                                         "Message: " + e.Errors[i].Message + "\n" +
-                                         "NativeError: " + e.Errors[i].NativeError.ToString() + "\n" +
-                                         "Source: " + e.Errors[i].Source + "\n" +
-                                         "SQL: " + e.Errors[i].SQLState + "\n";
-                    }
-                    System.Diagnostics.EventLog log = new System.Diagnostics.EventLog();
-                    log.Source = "My Application";
-                    log.WriteEntry(errorMessages);
+                   
                     bol = false;
                 }
                 return bol;   
             }
+            public bool db_chck()
+            {
+                bool val = true;
+                Data_cnct.calls main_call = new Data_cnct.calls();
+                if (main_call.connection_chck())
+                {
+                    try
+                    {
+                        odbc_cnn connection_1 = new odbc_cnn();
+                        odbc_comand command_1 = new odbc_comand("SELECT * FROM Main_tbl");
+
+                        command_1.getcmd().Connection = connection_1.getcnn();
+                        connection_1.getcnn().Open();
+                        OdbcDataReader reader = command_1.getcmd().ExecuteReader();
+                        string test = "";
+                        bool test1 = false;
+                        while (reader.Read())
+                        {
+                            test = reader[0].ToString();
+                        }
+                        if (test != "")
+                        {
+                            test1 = true;
+                        }
+                        reader.Close();
+                        connection_1.getcnn().Close();
+                        if (test1) { val = true; }
+
+                    }
+                    catch
+                    {
+                        val = false;
+                    }
+                    
+                }
+                else
+                {
+                    val = false;
+                }
+                return val;
+            }
+                
+
+            }
         }
     }
-}
+

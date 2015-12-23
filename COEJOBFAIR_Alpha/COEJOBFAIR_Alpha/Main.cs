@@ -37,8 +37,50 @@ namespace COEJOBFAIR_Alpha
                 PrintLabelUsingPrintJob();
             }
         }
+        private void debug_connection(object sender, EventArgs e)
+        {
+            pBar1.Show();
+            pBar1.Value = 0;
+            pBar1.PerformStep();
+            Data_cnct.calls test_call = new Data_cnct.calls();
+            pBar1.PerformStep();
+            bool test = test_call.connection_chck();
+            if (!test)
+            {
+                status_cnn.Show();
+                status_cnn.BackColor = System.Drawing.Color.DarkRed;
+            }
+            else
+            {
+                status_cnn.Show();
+            }
+            pBar1.Value = 100;
 
-   
+
+        }
+        private void debug_database(object sender, EventArgs e)
+        {
+            pBar1.Show();
+            pBar1.Value = 0;
+            pBar1.PerformStep();
+            Data_cnct.calls test_call = new Data_cnct.calls();
+            pBar1.PerformStep();
+            bool test = test_call.db_chck();
+            if (!test)
+            {
+                status_db.Show();
+                status_db.BackColor = System.Drawing.Color.DarkRed;
+            }
+            else
+            {
+                status_db.Show();
+                
+            }
+            pBar1.Value = 100;
+
+        }
+     
+
         public void PrintLabelUsingPrintJob()
         {
             // get a reference to first connected printer
@@ -63,6 +105,13 @@ namespace COEJOBFAIR_Alpha
             printJob.Print();
         }
 
+        private void resetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            status_db.Hide();
+            status_cnn.Hide();
+            pBar1.Hide();
+            txt_id.Focus();
+        }
     }
 }
 
