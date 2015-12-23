@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        public System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.lbl_test = new System.Windows.Forms.Label();
             this.lbl_test2 = new System.Windows.Forms.Label();
@@ -41,7 +41,7 @@
             // lbl_test
             // 
             this.lbl_test.AutoSize = true;
-            this.lbl_test.Location = new System.Drawing.Point(304, 267);
+            this.lbl_test.Location = new System.Drawing.Point(831, 179);
             this.lbl_test.Name = "lbl_test";
             this.lbl_test.Size = new System.Drawing.Size(57, 13);
             this.lbl_test.TabIndex = 1;
@@ -50,7 +50,7 @@
             // lbl_test2
             // 
             this.lbl_test2.AutoSize = true;
-            this.lbl_test2.Location = new System.Drawing.Point(307, 294);
+            this.lbl_test2.Location = new System.Drawing.Point(834, 206);
             this.lbl_test2.Name = "lbl_test2";
             this.lbl_test2.Size = new System.Drawing.Size(57, 13);
             this.lbl_test2.TabIndex = 2;
@@ -58,12 +58,13 @@
             // 
             // txt_id
             // 
-            this.txt_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_id.Location = new System.Drawing.Point(307, 136);
+            this.txt_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_id.Location = new System.Drawing.Point(576, 390);
             this.txt_id.Multiline = true;
             this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(319, 76);
+            this.txt_id.Size = new System.Drawing.Size(239, 62);
             this.txt_id.TabIndex = 0;
+            this.txt_id.Text = "R1257448";
             this.txt_id.TextChanged += new System.EventHandler(this.txt_id_TextChanged);
             // 
             // openFileDialog1
@@ -73,7 +74,7 @@
             // lbl_test6
             // 
             this.lbl_test6.AutoSize = true;
-            this.lbl_test6.Location = new System.Drawing.Point(636, 307);
+            this.lbl_test6.Location = new System.Drawing.Point(831, 138);
             this.lbl_test6.Name = "lbl_test6";
             this.lbl_test6.Size = new System.Drawing.Size(57, 13);
             this.lbl_test6.TabIndex = 5;
@@ -82,7 +83,7 @@
             // lbl_test5
             // 
             this.lbl_test5.AutoSize = true;
-            this.lbl_test5.Location = new System.Drawing.Point(636, 278);
+            this.lbl_test5.Location = new System.Drawing.Point(831, 109);
             this.lbl_test5.Name = "lbl_test5";
             this.lbl_test5.Size = new System.Drawing.Size(57, 13);
             this.lbl_test5.TabIndex = 6;
@@ -91,7 +92,7 @@
             // lbl_test4
             // 
             this.lbl_test4.AutoSize = true;
-            this.lbl_test4.Location = new System.Drawing.Point(636, 250);
+            this.lbl_test4.Location = new System.Drawing.Point(831, 81);
             this.lbl_test4.Name = "lbl_test4";
             this.lbl_test4.Size = new System.Drawing.Size(57, 13);
             this.lbl_test4.TabIndex = 7;
@@ -100,7 +101,7 @@
             // lbl_test3
             // 
             this.lbl_test3.AutoSize = true;
-            this.lbl_test3.Location = new System.Drawing.Point(636, 228);
+            this.lbl_test3.Location = new System.Drawing.Point(831, 59);
             this.lbl_test3.Name = "lbl_test3";
             this.lbl_test3.Size = new System.Drawing.Size(57, 13);
             this.lbl_test3.TabIndex = 8;
@@ -124,16 +125,17 @@
             this.PerformLayout();
 
         }
+      
 
         #endregion
-        private System.Windows.Forms.Label lbl_test;
-        private System.Windows.Forms.Label lbl_test2;
-        private System.Windows.Forms.TextBox txt_id;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Label lbl_test6;
-        private System.Windows.Forms.Label lbl_test5;
-        private System.Windows.Forms.Label lbl_test4;
-        private System.Windows.Forms.Label lbl_test3;
+        public System.Windows.Forms.Label lbl_test;
+        public System.Windows.Forms.Label lbl_test2;
+        public System.Windows.Forms.TextBox txt_id;
+        public System.Windows.Forms.OpenFileDialog openFileDialog1;
+        public System.Windows.Forms.Label lbl_test6;
+        public System.Windows.Forms.Label lbl_test5;
+        public System.Windows.Forms.Label lbl_test4;
+        public System.Windows.Forms.Label lbl_test3;
     }
 }
 

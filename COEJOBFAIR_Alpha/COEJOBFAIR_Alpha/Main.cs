@@ -14,41 +14,12 @@ namespace COEJOBFAIR_Alpha
         {
             InitializeComponent();
         }
-
-        private void mainDBCall()
-        {
-
-            OdbcConnection cnn;
-            OdbcCommand cmd;
-            cnn = new OdbcConnection("DSN=COEJOBFAIR;UID=ttu\ryhutchi;PWD = Frixon1!!;");
-
-            cmd = new OdbcCommand();
-            cmd.CommandText = "SELECT * FROM Main_tbl WHERE id = " + txt_id.Text;
-            cmd.CommandType = CommandType.Text;
-            cmd.Connection = cnn;
-
-            cnn.Open();
-
-            OdbcDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
-            {
-                lbl_test.Text = reader[1].ToString();
-                lbl_test2.Text = reader[2].ToString();
-                lbl_test3.Text = reader[3].ToString();
-                lbl_test4.Text = reader[4].ToString();
-                lbl_test5.Text = reader[5].ToString();
                 
-
-            }
-
-            // Call Close when done reading.
-            reader.Close();
-            cnn.Close();
-        }
         public string getfilename()
         {
             return openFileDialog1.FileName;
-        } 
+        }
+     
 
         private void txt_id_TextChanged(object sender, EventArgs e)
         {
@@ -62,15 +33,12 @@ namespace COEJOBFAIR_Alpha
             }
             if (complete)
             {
-                mainDBCall();
+                
                 PrintLabelUsingPrintJob();
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
+   
         public void PrintLabelUsingPrintJob()
         {
             // get a reference to first connected printer
@@ -83,9 +51,10 @@ namespace COEJOBFAIR_Alpha
             ILabel label1 = DYMO.Label.Framework.Label.Open("C:\\Users\\ryan\\Source\\Repos\\COEJOBFAIR\\COEJOBFAIR_Alpha\\COEJOBFAIR_Alpha\\TextLabel.label");
 
             // print three labels using label from TextLabel1.label
-            label1.SetObjectText("NAME", string.Format(lbl_test.Text +" "+ lbl_test2.Text));
-            label1.SetObjectText("GRAD_DATE", string.Format(lbl_test4.Text.ToString()));
-            label1.SetObjectText("MAJOR", string.Format(lbl_test3.Text));
+            Data_cnct.calls main_call = new Data_cnct.calls(txt_id.Text);
+            label1.SetObjectText("NAME", main_call.get_crd_data()[0] + " " + main_call.get_crd_data()[1]);
+            label1.SetObjectText("GRAD_DATE", main_call.get_crd_data()[3]);
+            label1.SetObjectText("MAJOR", main_call.get_crd_data()[2]);
 
 
             printJob.AddLabel(label1);
@@ -93,6 +62,7 @@ namespace COEJOBFAIR_Alpha
             // send labels to print spooler
             printJob.Print();
         }
+
     }
 }
 
