@@ -112,6 +112,19 @@ namespace COEJOBFAIR_Alpha
             pBar1.Hide();
             txt_id.Focus();
         }
+
+        private void importToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Employer form = new Employer();
+            this.Visible = false;
+            form.Show();
+           
+        }
     }
 }
 
