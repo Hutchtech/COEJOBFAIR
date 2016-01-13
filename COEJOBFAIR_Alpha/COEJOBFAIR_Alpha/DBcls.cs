@@ -30,7 +30,7 @@ namespace COEJOBFAIR_Alpha
 
             public odbc_cnn()
             {
-                cnn = new OdbcConnection("DSN=COEJOBFAIR;UID=ttu\ryhutchi;PWD = Frixon1!!;");
+                cnn = new OdbcConnection("DSN=COEJOBFAIR;UID=ttu\ryhutchi;PWD = Frixon1!!;");  // get login from Remi that is not mine!
             }
 
             public OdbcConnection getcnn() { return cnn; }
@@ -86,7 +86,7 @@ namespace COEJOBFAIR_Alpha
                     
                     test_cnn.getcnn().Open();
                 }
-                catch (OdbcException e)
+                catch (OdbcException error) //use error in future for error logging
                 {
                    
                     bol = false;
