@@ -35,6 +35,10 @@ namespace COEJOBFAIR_Alpha
             this.txt_organization = new System.Windows.Forms.TextBox();
             this.txt_title = new System.Windows.Forms.TextBox();
             this.submit = new System.Windows.Forms.Button();
+            this.txt_hotel = new System.Windows.Forms.TextBox();
+            this.txt_nights = new System.Windows.Forms.TextBox();
+            this.chck_box_alumni = new System.Windows.Forms.CheckBox();
+            this.txt_other = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txt_name_first
@@ -75,11 +79,46 @@ namespace COEJOBFAIR_Alpha
             this.submit.UseVisualStyleBackColor = true;
             this.submit.Click += new System.EventHandler(this.submit_click);
             // 
+            // txt_hotel
+            // 
+            this.txt_hotel.Location = new System.Drawing.Point(99, 178);
+            this.txt_hotel.Name = "txt_hotel";
+            this.txt_hotel.Size = new System.Drawing.Size(100, 20);
+            this.txt_hotel.TabIndex = 5;
+            // 
+            // txt_nights
+            // 
+            this.txt_nights.Location = new System.Drawing.Point(99, 204);
+            this.txt_nights.Name = "txt_nights";
+            this.txt_nights.Size = new System.Drawing.Size(100, 20);
+            this.txt_nights.TabIndex = 6;
+            // 
+            // chck_box_alumni
+            // 
+            this.chck_box_alumni.AutoSize = true;
+            this.chck_box_alumni.Location = new System.Drawing.Point(241, 77);
+            this.chck_box_alumni.Name = "chck_box_alumni";
+            this.chck_box_alumni.Size = new System.Drawing.Size(63, 17);
+            this.chck_box_alumni.TabIndex = 7;
+            this.chck_box_alumni.Text = "Alumni?";
+            this.chck_box_alumni.UseVisualStyleBackColor = true;
+            // 
+            // txt_other
+            // 
+            this.txt_other.Location = new System.Drawing.Point(99, 230);
+            this.txt_other.Name = "txt_other";
+            this.txt_other.Size = new System.Drawing.Size(100, 20);
+            this.txt_other.TabIndex = 8;
+            // 
             // Employer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1043, 572);
+            this.Controls.Add(this.txt_other);
+            this.Controls.Add(this.chck_box_alumni);
+            this.Controls.Add(this.txt_nights);
+            this.Controls.Add(this.txt_hotel);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.txt_title);
             this.Controls.Add(this.txt_organization);
@@ -104,5 +143,9 @@ namespace COEJOBFAIR_Alpha
         private System.Windows.Forms.TextBox txt_organization;
         private System.Windows.Forms.TextBox txt_title;
         private System.Windows.Forms.Button submit;
+        private System.Windows.Forms.TextBox txt_hotel;
+        private System.Windows.Forms.TextBox txt_nights;
+        private System.Windows.Forms.CheckBox chck_box_alumni;
+        private System.Windows.Forms.TextBox txt_other;
     }
 }

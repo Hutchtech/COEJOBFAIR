@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace COEJOBFAIR_Alpha
 {
@@ -134,9 +135,72 @@ namespace COEJOBFAIR_Alpha
                 }
                 return val;
             }
+
                 
 
             }
+        public class Employe_calls
+        {
+            //SQL constants
+            const string employe_db = "Employers_2016_S";
+            const string column_names = "(name, organization, title, hotel, other, nights, alumni)";
+            const string value_names = "(@name, @organization, @title, @hotel, @other, @nights, @alumni)";
+            string[] value = new string[7] {"@name", "@organization", "@title", "@hotel", "@other", "@nights", "@alumni" };
+            /// <summary>
+            /// class for employe funcitons to the database.
+            /// this constructor will get all the data for 
+            /// an employe and submit it to the database
+            /// </summary>
+            /// <param name="employe_data">
+            /// Refrence for employe data
+            ///     0 - first + space + last
+            ///     1 - organization
+            ///     2 - title
+            ///     3 - hotel
+            ///     4 - other
+            ///     5 - amount of nights
+            /// </param>
+            public Employe_calls(string[] employe_data)
+            {
+                odbc_cnn connection_1 = new odbc_cnn();
+                OdbcCommand command = new OdbcCommand();
+
+                command.CommandType = CommandType.Text;
+                command.CommandText = "INSERT into " + employe_db + " ("+column_names+") VALUES ("+value_names+")";
+                int i = 0;
+                while(i<7)
+                {
+                    command.Parameters.AddWithValue(value[i],employe_data[i]);  //STEP THROUGH THIS MAKE SURE IT IS DOING WHAT YOU WANT REF : 1A
+                    i++;
+                }
+
+                command.Connection = connection_1.getcnn();
+                command.ExecuteNonQuery();
+            }
+            /// <summary>
+            /// For Mass Import from Survery Monkey Import
+            /// </summary>
+            /// <param name="employe_data"></param>
+            /// <param name="table"></param>
+            public Employe_calls(string[] employe_data,string table) 
+            {
+                odbc_cnn connection_1 = new odbc_cnn();
+                OdbcCommand command = new OdbcCommand();
+
+                command.CommandType = CommandType.Text;
+                command.CommandText = "INSERT into " + table + " (" + column_names + ") VALUES (" + value_names + ")";
+
+                int i = 0;
+                while (i < 7)
+                {
+                    command.Parameters.AddWithValue(value[i], employe_data[i]);  //STEP THROUGH THIS MAKE SURE IT IS DOING WHAT YOU WANT REF : 1A
+                    i++;
+                }
+
+                command.Connection = connection_1.getcnn();
+                command.ExecuteNonQuery();
+            }
+        }
         }
     }
 
