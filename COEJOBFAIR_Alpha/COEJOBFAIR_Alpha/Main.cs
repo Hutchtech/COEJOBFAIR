@@ -33,8 +33,8 @@ namespace COEJOBFAIR_Alpha
             }
             if (complete)
             {
-                
-                PrintLabelUsingPrintJob();
+                this.grp_1.Visible = true;
+                fill_info();
             }
         }
         private void debug_connection(object sender, EventArgs e)
@@ -80,6 +80,14 @@ namespace COEJOBFAIR_Alpha
 
         }
      
+        public void fill_info()
+        {
+            Data_cnct.calls main_call = new Data_cnct.calls(txt_id.Text);
+            txt_first_name.Text = main_call.get_crd_data()[0];
+            txt_last_name.Text = main_call.get_crd_data()[1];
+            txt_Grad.Text = main_call.get_crd_data()[3];
+            txt_major.Text =   main_call.get_crd_data()[2];
+        }
 
         public void PrintLabelUsingPrintJob()
         {
@@ -93,10 +101,10 @@ namespace COEJOBFAIR_Alpha
             ILabel label1 = DYMO.Label.Framework.Label.Open("C:\\Users\\ryan\\Source\\Repos\\COEJOBFAIR\\COEJOBFAIR_Alpha\\COEJOBFAIR_Alpha\\TextLabel.label");
 
             // print three labels using label from TextLabel1.label
-            Data_cnct.calls main_call = new Data_cnct.calls(txt_id.Text);
-            label1.SetObjectText("NAME", main_call.get_crd_data()[0] + " " + main_call.get_crd_data()[1]);
-            label1.SetObjectText("GRAD_DATE", main_call.get_crd_data()[3]);
-            label1.SetObjectText("MAJOR", main_call.get_crd_data()[2]);
+            
+            label1.SetObjectText("NAME", txt_first_name.Text.ToString() + " " + txt_last_name.Text.ToString());
+            label1.SetObjectText("GRAD_DATE", txt_Grad.Text.ToString());
+            label1.SetObjectText("MAJOR", txt_major.Text.ToString());
 
 
             printJob.AddLabel(label1);
