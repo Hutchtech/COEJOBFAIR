@@ -52,7 +52,7 @@ namespace COEJOBFAIR_Alpha
             // 
             this.txt_id.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_id.Location = new System.Drawing.Point(622, 222);
+            this.txt_id.Location = new System.Drawing.Point(814, 254);
             this.txt_id.Multiline = true;
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(453, 117);
@@ -68,9 +68,9 @@ namespace COEJOBFAIR_Alpha
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripDropDownButton1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 551);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 583);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1206, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1398, 22);
             this.statusStrip1.TabIndex = 9;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -91,20 +91,20 @@ namespace COEJOBFAIR_Alpha
             this.immportToolStripMenuItem,
             this.inputToolStripMenuItem});
             this.employerToolStripMenuItem.Name = "employerToolStripMenuItem";
-            this.employerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.employerToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.employerToolStripMenuItem.Text = "Employer";
             // 
             // immportToolStripMenuItem
             // 
             this.immportToolStripMenuItem.Name = "immportToolStripMenuItem";
-            this.immportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.immportToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.immportToolStripMenuItem.Text = "Import";
             this.immportToolStripMenuItem.Click += new System.EventHandler(this.importToolStripMenuItem_Click);
             // 
             // inputToolStripMenuItem
             // 
             this.inputToolStripMenuItem.Name = "inputToolStripMenuItem";
-            this.inputToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.inputToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.inputToolStripMenuItem.Text = "Input";
             this.inputToolStripMenuItem.Click += new System.EventHandler(this.inputToolStripMenuItem_Click);
             // 
@@ -115,7 +115,7 @@ namespace COEJOBFAIR_Alpha
             this.databaseCheckToolStripMenuItem,
             this.resetToolStripMenuItem});
             this.debugToolStripMenuItem.Name = "debugToolStripMenuItem";
-            this.debugToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.debugToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.debugToolStripMenuItem.Text = "Debug";
             // 
             // debug_cnn_chck
@@ -145,9 +145,9 @@ namespace COEJOBFAIR_Alpha
             this.status_cnn.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.status_cnn.Enabled = false;
             this.status_cnn.ForeColor = System.Drawing.Color.Cornsilk;
-            this.status_cnn.Location = new System.Drawing.Point(0, 528);
+            this.status_cnn.Location = new System.Drawing.Point(0, 560);
             this.status_cnn.Name = "status_cnn";
-            this.status_cnn.Size = new System.Drawing.Size(1206, 23);
+            this.status_cnn.Size = new System.Drawing.Size(1398, 23);
             this.status_cnn.TabIndex = 10;
             this.status_cnn.Text = "Connection";
             this.status_cnn.UseVisualStyleBackColor = false;
@@ -158,9 +158,9 @@ namespace COEJOBFAIR_Alpha
             this.status_db.BackColor = System.Drawing.Color.DarkGreen;
             this.status_db.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.status_db.ForeColor = System.Drawing.Color.Cornsilk;
-            this.status_db.Location = new System.Drawing.Point(0, 505);
+            this.status_db.Location = new System.Drawing.Point(0, 537);
             this.status_db.Name = "status_db";
-            this.status_db.Size = new System.Drawing.Size(1206, 23);
+            this.status_db.Size = new System.Drawing.Size(1398, 23);
             this.status_db.TabIndex = 12;
             this.status_db.Text = "Database";
             this.status_db.UseVisualStyleBackColor = false;
@@ -169,9 +169,9 @@ namespace COEJOBFAIR_Alpha
             // pBar1
             // 
             this.pBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pBar1.Location = new System.Drawing.Point(0, 479);
+            this.pBar1.Location = new System.Drawing.Point(0, 511);
             this.pBar1.Name = "pBar1";
-            this.pBar1.Size = new System.Drawing.Size(1206, 26);
+            this.pBar1.Size = new System.Drawing.Size(1398, 26);
             this.pBar1.TabIndex = 13;
             this.pBar1.Visible = false;
             // 
@@ -180,8 +180,7 @@ namespace COEJOBFAIR_Alpha
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1206, 573);
+            this.ClientSize = new System.Drawing.Size(1398, 605);
             this.Controls.Add(this.pBar1);
             this.Controls.Add(this.status_db);
             this.Controls.Add(this.status_cnn);
