@@ -47,8 +47,13 @@ namespace COEJOBFAIR_Alpha
             this.txt_last_name = new System.Windows.Forms.TextBox();
             this.grp_1 = new System.Windows.Forms.GroupBox();
             this.txt_Grad = new System.Windows.Forms.TextBox();
+            this.btn_print = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_choose = new System.Windows.Forms.Button();
+            this.cmb_choice = new System.Windows.Forms.ComboBox();
             this.statusStrip1.SuspendLayout();
             this.grp_1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txt_id
@@ -157,7 +162,7 @@ namespace COEJOBFAIR_Alpha
             // txt_first_name
             // 
             this.txt_first_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_first_name.Location = new System.Drawing.Point(0, 45);
+            this.txt_first_name.Location = new System.Drawing.Point(7, 45);
             this.txt_first_name.Name = "txt_first_name";
             this.txt_first_name.Size = new System.Drawing.Size(248, 31);
             this.txt_first_name.TabIndex = 14;
@@ -166,7 +171,7 @@ namespace COEJOBFAIR_Alpha
             // 
             this.txt_major.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txt_major.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_major.Location = new System.Drawing.Point(140, 119);
+            this.txt_major.Location = new System.Drawing.Point(144, 119);
             this.txt_major.Name = "txt_major";
             this.txt_major.Size = new System.Drawing.Size(185, 31);
             this.txt_major.TabIndex = 15;
@@ -174,7 +179,7 @@ namespace COEJOBFAIR_Alpha
             // txt_last_name
             // 
             this.txt_last_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_last_name.Location = new System.Drawing.Point(254, 45);
+            this.txt_last_name.Location = new System.Drawing.Point(261, 45);
             this.txt_last_name.Name = "txt_last_name";
             this.txt_last_name.Size = new System.Drawing.Size(218, 31);
             this.txt_last_name.TabIndex = 18;
@@ -182,14 +187,15 @@ namespace COEJOBFAIR_Alpha
             // grp_1
             // 
             this.grp_1.Controls.Add(this.txt_Grad);
+            this.grp_1.Controls.Add(this.btn_print);
             this.grp_1.Controls.Add(this.txt_first_name);
             this.grp_1.Controls.Add(this.txt_major);
             this.grp_1.Controls.Add(this.txt_last_name);
             this.grp_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grp_1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.grp_1.Location = new System.Drawing.Point(218, 209);
+            this.grp_1.Location = new System.Drawing.Point(211, 252);
             this.grp_1.Name = "grp_1";
-            this.grp_1.Size = new System.Drawing.Size(478, 171);
+            this.grp_1.Size = new System.Drawing.Size(485, 237);
             this.grp_1.TabIndex = 19;
             this.grp_1.TabStop = false;
             this.grp_1.Text = "Check Information";
@@ -203,6 +209,56 @@ namespace COEJOBFAIR_Alpha
             this.txt_Grad.Size = new System.Drawing.Size(163, 31);
             this.txt_Grad.TabIndex = 19;
             // 
+            // btn_print
+            // 
+            this.btn_print.Font = new System.Drawing.Font("Georgia", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.btn_print.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_print.Location = new System.Drawing.Point(145, 167);
+            this.btn_print.Name = "btn_print";
+            this.btn_print.Size = new System.Drawing.Size(184, 45);
+            this.btn_print.TabIndex = 20;
+            this.btn_print.Text = "Print";
+            this.btn_print.UseVisualStyleBackColor = true;
+            this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btn_choose);
+            this.groupBox1.Controls.Add(this.cmb_choice);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox1.Location = new System.Drawing.Point(211, 132);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(485, 114);
+            this.groupBox1.TabIndex = 20;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Choose Major";
+            this.groupBox1.Visible = false;
+            // 
+            // btn_choose
+            // 
+            this.btn_choose.Font = new System.Drawing.Font("Georgia", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.btn_choose.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_choose.Location = new System.Drawing.Point(144, 60);
+            this.btn_choose.Name = "btn_choose";
+            this.btn_choose.Size = new System.Drawing.Size(184, 45);
+            this.btn_choose.TabIndex = 21;
+            this.btn_choose.Text = "Choose";
+            this.btn_choose.UseVisualStyleBackColor = true;
+            this.btn_choose.Click += new System.EventHandler(this.btn_choose_Click);
+            // 
+            // cmb_choice
+            // 
+            this.cmb_choice.FormattingEnabled = true;
+            this.cmb_choice.Items.AddRange(new object[] {
+            "Computer Science",
+            "Mechanical Engineering",
+            "Electrical"});
+            this.cmb_choice.Location = new System.Drawing.Point(126, 26);
+            this.cmb_choice.Name = "cmb_choice";
+            this.cmb_choice.Size = new System.Drawing.Size(217, 28);
+            this.cmb_choice.TabIndex = 0;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -210,6 +266,7 @@ namespace COEJOBFAIR_Alpha
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(1405, 780);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grp_1);
             this.Controls.Add(this.pBar1);
             this.Controls.Add(this.status_db);
@@ -226,6 +283,7 @@ namespace COEJOBFAIR_Alpha
             this.statusStrip1.PerformLayout();
             this.grp_1.ResumeLayout(false);
             this.grp_1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,6 +309,10 @@ namespace COEJOBFAIR_Alpha
         private System.Windows.Forms.TextBox txt_last_name;
         private System.Windows.Forms.GroupBox grp_1;
         private System.Windows.Forms.TextBox txt_Grad;
+        private System.Windows.Forms.Button btn_print;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox cmb_choice;
+        private System.Windows.Forms.Button btn_choose;
     }
 }
 

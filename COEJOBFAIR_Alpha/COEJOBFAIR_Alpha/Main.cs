@@ -33,7 +33,8 @@ namespace COEJOBFAIR_Alpha
             }
             if (complete)
             {
-                this.grp_1.Visible = true;
+                reset();
+                
                 fill_info();
             }
         }
@@ -82,11 +83,21 @@ namespace COEJOBFAIR_Alpha
      
         public void fill_info()
         {
+            
             Data_cnct.calls main_call = new Data_cnct.calls(txt_id.Text);
             txt_first_name.Text = main_call.get_crd_data()[0];
             txt_last_name.Text = main_call.get_crd_data()[1];
             txt_Grad.Text = main_call.get_crd_data()[3];
-            txt_major.Text =   main_call.get_crd_data()[2];
+            txt_major.Text = "FNDL";
+            bool choice = String.Equals(txt_major.Text.ToString(), "FNDL");
+            if (choice)
+            {
+                this.groupBox1.Visible = true;
+            }
+            else
+            {
+                this.grp_1.Visible = true;
+            }
         }
 
         public void PrintLabelUsingPrintJob()
@@ -116,9 +127,32 @@ namespace COEJOBFAIR_Alpha
         private void resetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             status_db.Hide();
+            status_db.BackColor = System.Drawing.Color.DarkGreen;
             status_cnn.Hide();
+            status_cnn.BackColor = System.Drawing.Color.DarkGreen;
+            grp_1.Visible = false;
+            groupBox1.Visible = false;
             pBar1.Hide();
             txt_id.Focus();
+            reset();
+        }
+        private void reset()
+        {
+            this.txt_first_name.Text = "";
+            this.txt_major.Text = "";
+            this.txt_last_name.Text = "";
+            this.txt_Grad.Text = "";
+        }
+
+        private void btn_choose_Click(object sender, EventArgs e)
+        {
+            txt_major.Text = cmb_choice.Text.ToString();
+            this.grp_1.Visible = true;
+        }
+
+        private void btn_print_Click(object sender, EventArgs e)
+        {
+            PrintLabelUsingPrintJob();
         }
     }
 }
