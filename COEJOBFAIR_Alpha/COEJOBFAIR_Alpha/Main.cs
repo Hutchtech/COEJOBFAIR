@@ -88,7 +88,7 @@ namespace COEJOBFAIR_Alpha
             txt_first_name.Text = main_call.get_crd_data()[0];
             txt_last_name.Text = main_call.get_crd_data()[1];
             txt_Grad.Text = main_call.get_crd_data()[3];
-            txt_major.Text = "FNDL";
+            txt_major.Text = main_call.get_crd_data()[2];
             bool choice = String.Equals(txt_major.Text.ToString(), "FNDL");
             if (choice)
             {
