@@ -43,7 +43,7 @@ namespace COEJOBFAIR_Alpha
             this.status_db = new System.Windows.Forms.Button();
             this.pBar1 = new System.Windows.Forms.ProgressBar();
             this.txt_first_name = new System.Windows.Forms.TextBox();
-            this.txt_major = new System.Windows.Forms.TextBox();
+           // this.txt_major = new System.Windows.Forms.TextBox();
             this.txt_last_name = new System.Windows.Forms.TextBox();
             this.grp_1 = new System.Windows.Forms.GroupBox();
             this.txt_Grad = new System.Windows.Forms.TextBox();
@@ -51,9 +51,11 @@ namespace COEJOBFAIR_Alpha
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_choose = new System.Windows.Forms.Button();
             this.cmb_choice = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.statusStrip1.SuspendLayout();
             this.grp_1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_id
@@ -169,12 +171,12 @@ namespace COEJOBFAIR_Alpha
             // 
             // txt_major
             // 
-            this.txt_major.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txt_major.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_major.Location = new System.Drawing.Point(144, 119);
-            this.txt_major.Name = "txt_major";
-            this.txt_major.Size = new System.Drawing.Size(185, 31);
-            this.txt_major.TabIndex = 15;
+            //this.txt_major.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            //this.txt_major.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            //this.txt_major.Location = new System.Drawing.Point(144, 119);
+            //this.txt_major.Name = "txt_major";
+            //this.txt_major.Size = new System.Drawing.Size(185, 31);
+            //this.txt_major.TabIndex = 15;
             // 
             // txt_last_name
             // 
@@ -189,7 +191,7 @@ namespace COEJOBFAIR_Alpha
             this.grp_1.Controls.Add(this.txt_Grad);
             this.grp_1.Controls.Add(this.btn_print);
             this.grp_1.Controls.Add(this.txt_first_name);
-            this.grp_1.Controls.Add(this.txt_major);
+         //   this.grp_1.Controls.Add(this.txt_major);
             this.grp_1.Controls.Add(this.txt_last_name);
             this.grp_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grp_1.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -245,7 +247,6 @@ namespace COEJOBFAIR_Alpha
             this.btn_choose.TabIndex = 21;
             this.btn_choose.Text = "Choose";
             this.btn_choose.UseVisualStyleBackColor = true;
-            this.btn_choose.Click += new System.EventHandler(this.btn_choose_Click);
             // 
             // cmb_choice
             // 
@@ -259,6 +260,18 @@ namespace COEJOBFAIR_Alpha
             this.cmb_choice.Size = new System.Drawing.Size(217, 28);
             this.cmb_choice.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkRed;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(702, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(713, 228);
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -266,6 +279,7 @@ namespace COEJOBFAIR_Alpha
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(1405, 780);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grp_1);
             this.Controls.Add(this.pBar1);
@@ -284,6 +298,7 @@ namespace COEJOBFAIR_Alpha
             this.grp_1.ResumeLayout(false);
             this.grp_1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,7 +320,7 @@ namespace COEJOBFAIR_Alpha
         private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem databaseCheckToolStripMenuItem;
         private System.Windows.Forms.TextBox txt_first_name;
-        private System.Windows.Forms.TextBox txt_major;
+       // private System.Windows.Forms.TextBox txt_major;
         private System.Windows.Forms.TextBox txt_last_name;
         private System.Windows.Forms.GroupBox grp_1;
         private System.Windows.Forms.TextBox txt_Grad;
@@ -313,6 +328,7 @@ namespace COEJOBFAIR_Alpha
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox cmb_choice;
         private System.Windows.Forms.Button btn_choose;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

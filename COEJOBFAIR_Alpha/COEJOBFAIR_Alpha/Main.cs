@@ -18,9 +18,7 @@ namespace COEJOBFAIR_Alpha
         public string getfilename()
         {
             return openFileDialog1.FileName;
-        }
-     
-
+        }     
         private void txt_id_TextChanged(object sender, EventArgs e)
         {
             string cur = txt_id.Text;
@@ -33,8 +31,7 @@ namespace COEJOBFAIR_Alpha
             }
             if (complete)
             {
-                reset();
-                
+                reset();                
                 fill_info();
             }
         }
@@ -81,47 +78,56 @@ namespace COEJOBFAIR_Alpha
 
         }
      
+        /// <summary>
+        /// populates the check info groupbox
+        /// </summary>
         public void fill_info()
-        {
-            
+        {            
             Data_cnct.calls main_call = new Data_cnct.calls(txt_id.Text);
             txt_first_name.Text = main_call.get_crd_data()[0];
             txt_last_name.Text = main_call.get_crd_data()[1];
             txt_Grad.Text = main_call.get_crd_data()[3];
-            txt_major.Text = main_call.get_crd_data()[2];
-            bool choice = String.Equals(txt_major.Text.ToString(), "FNDL");
-            if (choice)
-            {
-                this.groupBox1.Visible = true;
-            }
-            else
-            {
-                this.grp_1.Visible = true;
-            }
+        //    txt_major.Text = main_call.get_crd_data()[2];
+           // bool choice = String.Equals(txt_major.Text.ToString(), "FNDL");
+          //  if (choice)
+         //   {
+             //   this.groupBox1.Visible = true;
+         //   }
+        //else
+           // {
+                this.grp_1.Visible = true;  //This is all that is needed when ON NO MAJOR BRANCH
+          //  }
         }
 
         public void PrintLabelUsingPrintJob()
         {
-            // get a reference to first connected printer
-            ILabelWriterPrinter printer = Framework.GetLabelWriterPrinters().First(p => p.IsConnected) as ILabelWriterPrinter;
+            try {
+                // get a reference to first connected printer
+                ILabelWriterPrinter printer = Framework.GetLabelWriterPrinters().First(p => p.IsConnected) as ILabelWriterPrinter;
 
-            // create print job with default params
-            IPrintJob printJob = printer.CreatePrintJob(null);
+                // create print job with default params
+                IPrintJob printJob = printer.CreatePrintJob(null);
+               
+                // open first label layout
+                ILabel label1 = DYMO.Label.Framework.Label.Open("NO_MAJOR.label");
+      
+                // print three labels using label from TextLabel1.label
 
-            // open first label layout
-            ILabel label1 = DYMO.Label.Framework.Label.Open("C:\\Users\\ryan\\Source\\Repos\\COEJOBFAIR\\COEJOBFAIR_Alpha\\COEJOBFAIR_Alpha\\TextLabel.label");
-
-            // print three labels using label from TextLabel1.label
-            
-            label1.SetObjectText("NAME", txt_first_name.Text.ToString() + " " + txt_last_name.Text.ToString());
-            label1.SetObjectText("GRAD_DATE", txt_Grad.Text.ToString());
-            label1.SetObjectText("MAJOR", txt_major.Text.ToString());
+                label1.SetObjectText("name", txt_first_name.Text.ToString() + " " + txt_last_name.Text.ToString());
+                label1.SetObjectText("Grad", txt_Grad.Text.ToString());
+                //  label1.SetObjectText("MAJOR", txt_major.Text.ToString());
 
 
-            printJob.AddLabel(label1);
+                printJob.AddLabel(label1);
 
-            // send labels to print spooler
-            printJob.Print();
+                // send labels to print spooler
+               
+                printJob.Print();
+            }
+            catch
+            {
+                MessageBox.Show("Caught");
+            }
         }
 
         private void resetToolStripMenuItem_Click(object sender, EventArgs e)
@@ -139,16 +145,16 @@ namespace COEJOBFAIR_Alpha
         private void reset()
         {
             this.txt_first_name.Text = "";
-            this.txt_major.Text = "";
+         //   this.txt_major.Text = "";
             this.txt_last_name.Text = "";
             this.txt_Grad.Text = "";
         }
 
-        private void btn_choose_Click(object sender, EventArgs e)
-        {
-            txt_major.Text = cmb_choice.Text.ToString();
-            this.grp_1.Visible = true;
-        }
+        //private void btn_choose_Click(object sender, EventArgs e)
+        //{
+        //    txt_major.Text = cmb_choice.Text.ToString();
+        //    this.grp_1.Visible = true;
+        //}
 
         private void btn_print_Click(object sender, EventArgs e)
         {
