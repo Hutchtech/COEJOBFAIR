@@ -33,8 +33,9 @@ namespace COEJOBFAIR_Alpha
             }
             if (complete)
             {
+                reset();
                 
-                PrintLabelUsingPrintJob();
+                fill_info();
             }
         }
         private void debug_connection(object sender, EventArgs e)
@@ -80,6 +81,24 @@ namespace COEJOBFAIR_Alpha
 
         }
      
+        public void fill_info()
+        {
+            
+            Data_cnct.calls main_call = new Data_cnct.calls(txt_id.Text);
+            txt_first_name.Text = main_call.get_crd_data()[0];
+            txt_last_name.Text = main_call.get_crd_data()[1];
+            txt_Grad.Text = main_call.get_crd_data()[3];
+            txt_major.Text = main_call.get_crd_data()[2];
+            bool choice = String.Equals(txt_major.Text.ToString(), "FNDL");
+            if (choice)
+            {
+                this.groupBox1.Visible = true;
+            }
+            else
+            {
+                this.grp_1.Visible = true;
+            }
+        }
 
         public void PrintLabelUsingPrintJob()
         {
@@ -93,10 +112,10 @@ namespace COEJOBFAIR_Alpha
             ILabel label1 = DYMO.Label.Framework.Label.Open("C:\\Users\\ryan\\Source\\Repos\\COEJOBFAIR\\COEJOBFAIR_Alpha\\COEJOBFAIR_Alpha\\TextLabel.label");
 
             // print three labels using label from TextLabel1.label
-            Data_cnct.calls main_call = new Data_cnct.calls(txt_id.Text);
-            label1.SetObjectText("NAME", main_call.get_crd_data()[0] + " " + main_call.get_crd_data()[1]);
-            label1.SetObjectText("GRAD_DATE", main_call.get_crd_data()[3]);
-            label1.SetObjectText("MAJOR", main_call.get_crd_data()[2]);
+            
+            label1.SetObjectText("NAME", txt_first_name.Text.ToString() + " " + txt_last_name.Text.ToString());
+            label1.SetObjectText("GRAD_DATE", txt_Grad.Text.ToString());
+            label1.SetObjectText("MAJOR", txt_major.Text.ToString());
 
 
             printJob.AddLabel(label1);
@@ -108,9 +127,32 @@ namespace COEJOBFAIR_Alpha
         private void resetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             status_db.Hide();
+            status_db.BackColor = System.Drawing.Color.DarkGreen;
             status_cnn.Hide();
+            status_cnn.BackColor = System.Drawing.Color.DarkGreen;
+            grp_1.Visible = false;
+            groupBox1.Visible = false;
             pBar1.Hide();
             txt_id.Focus();
+            reset();
+        }
+        private void reset()
+        {
+            this.txt_first_name.Text = "";
+            this.txt_major.Text = "";
+            this.txt_last_name.Text = "";
+            this.txt_Grad.Text = "";
+        }
+
+        private void btn_choose_Click(object sender, EventArgs e)
+        {
+            txt_major.Text = cmb_choice.Text.ToString();
+            this.grp_1.Visible = true;
+        }
+
+        private void btn_print_Click(object sender, EventArgs e)
+        {
+            PrintLabelUsingPrintJob();
         }
     }
 }
