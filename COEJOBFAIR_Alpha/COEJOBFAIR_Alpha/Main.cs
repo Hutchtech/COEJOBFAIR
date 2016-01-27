@@ -31,7 +31,7 @@ namespace COEJOBFAIR_Alpha
             }
             if (complete)
             {
-                reset();                
+                             
                 fill_info();
             }
         }
@@ -122,11 +122,13 @@ namespace COEJOBFAIR_Alpha
 
                 // send labels to print spooler
                
-                printJob.Print();
+               printJob.Print();
+                MessageBox.Show("Complete. Good Luck!");
+                reset();
             }
             catch
             {
-                MessageBox.Show("Caught");
+                MessageBox.Show("Please Ask for help (Printer Error)");
             }
         }
 
@@ -148,6 +150,10 @@ namespace COEJOBFAIR_Alpha
          //   this.txt_major.Text = "";
             this.txt_last_name.Text = "";
             this.txt_Grad.Text = "";
+            this.groupBox1.Visible = false;
+            this.grp_1.Visible = false;
+            this.txt_id.Text = "";
+            this.txt_id.Focus();
         }
 
         //private void btn_choose_Click(object sender, EventArgs e)
