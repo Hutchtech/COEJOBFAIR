@@ -167,6 +167,11 @@ namespace COEJOBFAIR_Alpha
         {
             PrintLabelUsingPrintJob();
         }
+
+        private void manualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.grp_1.Visible = true;
+        }
     }
 }
 

@@ -52,6 +52,7 @@ namespace COEJOBFAIR_Alpha
             this.cmb_choice = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txt_Grad_Year = new System.Windows.Forms.TextBox();
+            this.manualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.grp_1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -88,7 +89,8 @@ namespace COEJOBFAIR_Alpha
             // 
             this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.debugToolStripMenuItem});
+            this.debugToolStripMenuItem,
+            this.manualToolStripMenuItem});
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
             this.toolStripDropDownButton1.Size = new System.Drawing.Size(13, 20);
@@ -271,6 +273,13 @@ namespace COEJOBFAIR_Alpha
             this.txt_Grad_Year.Size = new System.Drawing.Size(163, 31);
             this.txt_Grad_Year.TabIndex = 21;
             // 
+            // manualToolStripMenuItem
+            // 
+            this.manualToolStripMenuItem.Name = "manualToolStripMenuItem";
+            this.manualToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.manualToolStripMenuItem.Text = "Manual";
+            this.manualToolStripMenuItem.Click += new System.EventHandler(this.manualToolStripMenuItem_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,6 +338,7 @@ namespace COEJOBFAIR_Alpha
         private System.Windows.Forms.Button btn_choose;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txt_Grad_Year;
+        private System.Windows.Forms.ToolStripMenuItem manualToolStripMenuItem;
     }
 }
 
