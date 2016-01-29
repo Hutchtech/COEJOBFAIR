@@ -46,7 +46,7 @@ namespace COEJOBFAIR_Alpha
 
         public class calls
         {
-            string[] data_name_crd = new string[4];
+            string[] data_name_crd = new string[10];
             string Rnum;
            
             public calls(string s)
@@ -79,6 +79,7 @@ namespace COEJOBFAIR_Alpha
                         data_name_crd[1] = reader[2].ToString();
                         data_name_crd[2] = reader[3].ToString();
                         data_name_crd[3] = reader[4].ToString();
+                        data_name_crd[6] = reader[6].ToString();
                     }
 
                     reader.Close();

@@ -43,15 +43,15 @@ namespace COEJOBFAIR_Alpha
             this.status_db = new System.Windows.Forms.Button();
             this.pBar1 = new System.Windows.Forms.ProgressBar();
             this.txt_first_name = new System.Windows.Forms.TextBox();
-           // this.txt_major = new System.Windows.Forms.TextBox();
             this.txt_last_name = new System.Windows.Forms.TextBox();
             this.grp_1 = new System.Windows.Forms.GroupBox();
-            this.txt_Grad = new System.Windows.Forms.TextBox();
+            this.txt_Grad_Month = new System.Windows.Forms.TextBox();
             this.btn_print = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_choose = new System.Windows.Forms.Button();
             this.cmb_choice = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txt_Grad_Year = new System.Windows.Forms.TextBox();
             this.statusStrip1.SuspendLayout();
             this.grp_1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -169,15 +169,6 @@ namespace COEJOBFAIR_Alpha
             this.txt_first_name.Size = new System.Drawing.Size(248, 31);
             this.txt_first_name.TabIndex = 14;
             // 
-            // txt_major
-            // 
-            //this.txt_major.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            //this.txt_major.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //this.txt_major.Location = new System.Drawing.Point(144, 119);
-            //this.txt_major.Name = "txt_major";
-            //this.txt_major.Size = new System.Drawing.Size(185, 31);
-            //this.txt_major.TabIndex = 15;
-            // 
             // txt_last_name
             // 
             this.txt_last_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -188,10 +179,10 @@ namespace COEJOBFAIR_Alpha
             // 
             // grp_1
             // 
-            this.grp_1.Controls.Add(this.txt_Grad);
+            this.grp_1.Controls.Add(this.txt_Grad_Year);
+            this.grp_1.Controls.Add(this.txt_Grad_Month);
             this.grp_1.Controls.Add(this.btn_print);
             this.grp_1.Controls.Add(this.txt_first_name);
-         //   this.grp_1.Controls.Add(this.txt_major);
             this.grp_1.Controls.Add(this.txt_last_name);
             this.grp_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grp_1.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -203,13 +194,13 @@ namespace COEJOBFAIR_Alpha
             this.grp_1.Text = "Check Information";
             this.grp_1.Visible = false;
             // 
-            // txt_Grad
+            // txt_Grad_Month
             // 
-            this.txt_Grad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Grad.Location = new System.Drawing.Point(151, 82);
-            this.txt_Grad.Name = "txt_Grad";
-            this.txt_Grad.Size = new System.Drawing.Size(163, 31);
-            this.txt_Grad.TabIndex = 19;
+            this.txt_Grad_Month.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Grad_Month.Location = new System.Drawing.Point(92, 82);
+            this.txt_Grad_Month.Name = "txt_Grad_Month";
+            this.txt_Grad_Month.Size = new System.Drawing.Size(163, 31);
+            this.txt_Grad_Month.TabIndex = 19;
             // 
             // btn_print
             // 
@@ -272,6 +263,14 @@ namespace COEJOBFAIR_Alpha
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 
+            // txt_Grad_Year
+            // 
+            this.txt_Grad_Year.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Grad_Year.Location = new System.Drawing.Point(261, 82);
+            this.txt_Grad_Year.Name = "txt_Grad_Year";
+            this.txt_Grad_Year.Size = new System.Drawing.Size(163, 31);
+            this.txt_Grad_Year.TabIndex = 21;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -323,12 +322,13 @@ namespace COEJOBFAIR_Alpha
        // private System.Windows.Forms.TextBox txt_major;
         private System.Windows.Forms.TextBox txt_last_name;
         private System.Windows.Forms.GroupBox grp_1;
-        private System.Windows.Forms.TextBox txt_Grad;
+        private System.Windows.Forms.TextBox txt_Grad_Month;
         private System.Windows.Forms.Button btn_print;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox cmb_choice;
         private System.Windows.Forms.Button btn_choose;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txt_Grad_Year;
     }
 }
 

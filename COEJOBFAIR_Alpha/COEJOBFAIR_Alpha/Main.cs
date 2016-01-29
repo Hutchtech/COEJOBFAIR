@@ -86,7 +86,8 @@ namespace COEJOBFAIR_Alpha
             Data_cnct.calls main_call = new Data_cnct.calls(txt_id.Text);
             txt_first_name.Text = main_call.get_crd_data()[0];
             txt_last_name.Text = main_call.get_crd_data()[1];
-            txt_Grad.Text = main_call.get_crd_data()[3];
+            txt_Grad_Month.Text = main_call.get_crd_data()[3];
+            txt_Grad_Year.Text = main_call.get_crd_data()[6];
         //    txt_major.Text = main_call.get_crd_data()[2];
            // bool choice = String.Equals(txt_major.Text.ToString(), "FNDL");
           //  if (choice)
@@ -114,7 +115,7 @@ namespace COEJOBFAIR_Alpha
                 // print three labels using label from TextLabel1.label
 
                 label1.SetObjectText("name", txt_first_name.Text.ToString() + " " + txt_last_name.Text.ToString());
-                label1.SetObjectText("Grad", txt_Grad.Text.ToString());
+                label1.SetObjectText("Grad", txt_Grad_Month.Text.ToString() + " " + txt_Grad_Year.Text.ToString());
                 //  label1.SetObjectText("MAJOR", txt_major.Text.ToString());
 
 
@@ -149,7 +150,7 @@ namespace COEJOBFAIR_Alpha
             this.txt_first_name.Text = "";
          //   this.txt_major.Text = "";
             this.txt_last_name.Text = "";
-            this.txt_Grad.Text = "";
+            this.txt_Grad_Month.Text = "";
             this.groupBox1.Visible = false;
             this.grp_1.Visible = false;
             this.txt_id.Text = "";
