@@ -86,8 +86,8 @@ namespace COEJOBFAIR_Alpha
             Data_cnct.calls main_call = new Data_cnct.calls(txt_id.Text);
             txt_first_name.Text = main_call.get_crd_data()[0];
             txt_last_name.Text = main_call.get_crd_data()[1];
-            txt_Grad_Month.Text = main_call.get_crd_data()[3];
-            txt_Grad_Year.Text = main_call.get_crd_data()[6];
+            txt_Grad_Month.Text = main_call.get_crd_data()[2];
+            txt_Grad_Year.Text = main_call.get_crd_data()[3];
         //    txt_major.Text = main_call.get_crd_data()[2];
            // bool choice = String.Equals(txt_major.Text.ToString(), "FNDL");
           //  if (choice)

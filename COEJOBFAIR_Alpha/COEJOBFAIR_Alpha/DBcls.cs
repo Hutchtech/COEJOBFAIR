@@ -68,20 +68,22 @@ namespace COEJOBFAIR_Alpha
             {
                 try {
                     odbc_cnn connection_1 = new odbc_cnn();
-                    odbc_comand command_1 = new odbc_comand("SELECT * FROM Main_tbl WHERE id = " + Rnum);
+                    odbc_comand command_1 = new odbc_comand("SELECT * FROM Student_Job_Fair WHERE Student_Tech_ID = 'R"+Rnum+"';");
 
                     command_1.getcmd().Connection = connection_1.getcnn();
                     connection_1.getcnn().Open();
                     OdbcDataReader reader = command_1.getcmd().ExecuteReader();
                     while (reader.Read())
                     {
-                        data_name_crd[0] = reader[1].ToString();
-                        data_name_crd[1] = reader[2].ToString();
-                        data_name_crd[2] = reader[3].ToString();
-                        data_name_crd[3] = reader[4].ToString();
-                        data_name_crd[6] = reader[6].ToString();
+                        data_name_crd[0] = reader[0].ToString(); //First
+                        data_name_crd[1] = reader[1].ToString(); //Last
+                        data_name_crd[2] = reader[2].ToString(); //Month
+                        data_name_crd[3] = reader[3].ToString(); //Year
+                        data_name_crd[4] = reader[4].ToString(); //Id
+                        data_name_crd[5] = reader[5].ToString(); //Pre
+                        data_name_crd[6] = reader[6].ToString(); //Fair
                     }
-
+                    
                     reader.Close();
                     connection_1.getcnn().Close();
                 }
@@ -91,6 +93,7 @@ namespace COEJOBFAIR_Alpha
                 }
                  
             }
+         
             public bool connection_chck()
             {
                 bool bol = true;
@@ -117,7 +120,7 @@ namespace COEJOBFAIR_Alpha
                     try
                     {
                         odbc_cnn connection_1 = new odbc_cnn();
-                        odbc_comand command_1 = new odbc_comand("SELECT * FROM Main_tbl");
+                        odbc_comand command_1 = new odbc_comand("SELECT TOP 10 FROM Main_tbl");
 
                         command_1.getcmd().Connection = connection_1.getcnn();
                         connection_1.getcnn().Open();
