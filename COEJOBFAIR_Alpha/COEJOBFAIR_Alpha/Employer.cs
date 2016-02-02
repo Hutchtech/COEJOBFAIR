@@ -25,9 +25,9 @@ namespace COEJOBFAIR_Alpha
             data_employe[0] = txt_name_first.Text + " " + txt_name_last.Text;
             data_employe[1] = txt_organization.Text;
             data_employe[2] = txt_title.Text;
-            data_employe[3] = txt_hotel.Text;
+            data_employe[3] = cmb_hotels.SelectedText.ToString();
             data_employe[4] = txt_other.Text;
-            data_employe[5] = txt_nights.Text;
+            data_employe[5] = cmb_nights.SelectedText.ToString();
             data_employe[6] = chck_box_alumni.CheckState.ToString(); //MAKE SURE THIS OUTPUTS TO "TRUE" or "FALSE" REF : 2A
 
             print_employer(data_employe[0], data_employe[1]);
@@ -35,10 +35,8 @@ namespace COEJOBFAIR_Alpha
 
         private void survey_Import()
         {
-            string apiKey = "KEY";
-            string token = "TOKEN";
-            var sm = new SurveyMonkeyApi(apiKey, token);  // PICK UP HERE 
             
+
         }
 
         /// <summary>
@@ -49,22 +47,56 @@ namespace COEJOBFAIR_Alpha
         /// <param name="organization">name of organization</param>
         private void print_employer(string name, string organization)
         {
-            // get a reference to first connected printer
-            ILabelWriterPrinter printer = Framework.GetLabelWriterPrinters().First(p => p.IsConnected) as ILabelWriterPrinter; //from dymo-label demo
+            try
+            {
+                // get a reference to first connected printer
+                ILabelWriterPrinter printer = Framework.GetLabelWriterPrinters().First(p => p.IsConnected) as ILabelWriterPrinter;
 
-            // create print job with default params
-            IPrintJob printJob = printer.CreatePrintJob(null);
+                // create print job with default params
+                IPrintJob printJob = printer.CreatePrintJob(null);
 
-            // open first label layout
-            ILabel label = DYMO.Label.Framework.Label.Open("C:\\Users\\ryan\\Source\\Repos\\COEJOBFAIR\\COEJOBFAIR_Alpha\\COEJOBFAIR_Alpha\\TextLabel.label");
-            label.SetObjectText("NAME",name);
-            
-            label.SetObjectText("MAJOR",organization); // For testing purposes only need new label and change this whole function
+                // open first label layout
+                ILabel label1 = DYMO.Label.Framework.Label.Open("Employe.label");
 
-            printJob.AddLabel(label);
+                // print three labels using label from TextLabel1.label
 
-            // send labels to print spooler
-            printJob.Print();
+                label1.SetObjectText("NAME", txt_name_first.Text.ToString() + " " + txt_name_last.Text.ToString());
+                label1.SetObjectText("ORGANIZATION", txt_organization.Text.ToString());
+                label1.SetObjectText("TITLE", txt_title.ToString());
+                //  label1.SetObjectText("MAJOR", txt_major.Text.ToString());
+
+
+                printJob.AddLabel(label1);
+
+                // send labels to print spooler
+
+                printJob.Print();
+                MessageBox.Show("Complete. Good Luck!");
+                reset();
+            }
+            catch
+            {
+                MessageBox.Show("Please Ask for help (Printer Error)");
+            }
+        }
+        private void reset()
+        {
+            this.txt_name_last.Text = "";
+            this.txt_name_first.Text = "";
+            this.txt_organization.Text = "";
+            this.txt_other.Text = "";
+            this.txt_other.Visible = false;
+            this.txt_title.Text = "";
+            this.cmb_hotels.SelectedText = "";
+            this.cmb_nights.SelectedText = "";
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.cmb_hotels.SelectedText == "Other")
+            {
+                this.txt_other.Visible = true;
+            }
         }
     }
 }
