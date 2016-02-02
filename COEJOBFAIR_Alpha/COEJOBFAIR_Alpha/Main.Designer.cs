@@ -36,7 +36,6 @@ namespace COEJOBFAIR_Alpha
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.employerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.immportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inputToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.debugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.debug_cnn_chck = new System.Windows.Forms.ToolStripMenuItem();
@@ -88,23 +87,15 @@ namespace COEJOBFAIR_Alpha
             // employerToolStripMenuItem
             // 
             this.employerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.immportToolStripMenuItem,
             this.inputToolStripMenuItem});
             this.employerToolStripMenuItem.Name = "employerToolStripMenuItem";
-            this.employerToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.employerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.employerToolStripMenuItem.Text = "Employer";
-            // 
-            // immportToolStripMenuItem
-            // 
-            this.immportToolStripMenuItem.Name = "immportToolStripMenuItem";
-            this.immportToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
-            this.immportToolStripMenuItem.Text = "Import";
-            this.immportToolStripMenuItem.Click += new System.EventHandler(this.importToolStripMenuItem_Click);
             // 
             // inputToolStripMenuItem
             // 
             this.inputToolStripMenuItem.Name = "inputToolStripMenuItem";
-            this.inputToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.inputToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.inputToolStripMenuItem.Text = "Input";
             this.inputToolStripMenuItem.Click += new System.EventHandler(this.inputToolStripMenuItem_Click);
             // 
@@ -115,7 +106,7 @@ namespace COEJOBFAIR_Alpha
             this.databaseCheckToolStripMenuItem,
             this.resetToolStripMenuItem});
             this.debugToolStripMenuItem.Name = "debugToolStripMenuItem";
-            this.debugToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.debugToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.debugToolStripMenuItem.Text = "Debug";
             // 
             // debug_cnn_chck
@@ -215,7 +206,6 @@ namespace COEJOBFAIR_Alpha
         private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem databaseCheckToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem immportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inputToolStripMenuItem;
     }
 }

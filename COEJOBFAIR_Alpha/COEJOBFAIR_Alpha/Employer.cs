@@ -25,19 +25,17 @@ namespace COEJOBFAIR_Alpha
             data_employe[0] = txt_name_first.Text + " " + txt_name_last.Text;
             data_employe[1] = txt_organization.Text;
             data_employe[2] = txt_title.Text;
-            data_employe[3] = cmb_hotels.SelectedText.ToString();
+            data_employe[3] = cmb_hotels.SelectedItem.ToString();
             data_employe[4] = txt_other.Text;
-            data_employe[5] = cmb_nights.SelectedText.ToString();
+            data_employe[5] = cmb_nights.SelectedItem.ToString();
             data_employe[6] = chck_box_alumni.CheckState.ToString(); //MAKE SURE THIS OUTPUTS TO "TRUE" or "FALSE" REF : 2A
 
             print_employer(data_employe[0], data_employe[1]);
+           
+            Data_cnct.Employe_calls main_call = new Data_cnct.Employe_calls(data_employe);
+            reset();
         }
 
-        private void survey_Import()
-        {
-            
-
-        }
 
         /// <summary>
         /// Prints the employers information
@@ -62,7 +60,7 @@ namespace COEJOBFAIR_Alpha
 
                 label1.SetObjectText("NAME", txt_name_first.Text.ToString() + " " + txt_name_last.Text.ToString());
                 label1.SetObjectText("ORGANIZATION", txt_organization.Text.ToString());
-                label1.SetObjectText("TITLE", txt_title.ToString());
+                label1.SetObjectText("TITLE", txt_title.Text.ToString());
                 //  label1.SetObjectText("MAJOR", txt_major.Text.ToString());
 
 
@@ -81,14 +79,15 @@ namespace COEJOBFAIR_Alpha
         }
         private void reset()
         {
-            this.txt_name_last.Text = "";
-            this.txt_name_first.Text = "";
-            this.txt_organization.Text = "";
+            this.txt_name_last.Text = "Last Name";
+            this.txt_name_first.Text = "First Name";
+            this.txt_organization.Text = "Organization";
             this.txt_other.Text = "";
             this.txt_other.Visible = false;
-            this.txt_title.Text = "";
-            this.cmb_hotels.SelectedText = "";
-            this.cmb_nights.SelectedText = "";
+            this.txt_title.Text = "Title";
+            this.cmb_hotels.SelectedItem = "";
+            this.cmb_nights.SelectedItem = "";
+            this.chck_box_alumni.Checked = false;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -98,5 +97,6 @@ namespace COEJOBFAIR_Alpha
                 this.txt_other.Visible = true;
             }
         }
+
     }
 }

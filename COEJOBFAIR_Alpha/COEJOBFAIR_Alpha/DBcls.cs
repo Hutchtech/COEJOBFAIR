@@ -31,7 +31,7 @@ namespace COEJOBFAIR_Alpha
 
             public odbc_cnn()
             {
-                cnn = new OdbcConnection("DSN=COEJOBFAIR;UID=ttu\ryhutchi;PWD = Frixon1!!;");  // get login from Remi that is not mine!
+                cnn = new OdbcConnection("DSN=COEJOBFAIR;UID=ttu\ryhutchi;PWD = Frixon1!;");  // get login from Remi that is not mine!
             }
 
             public OdbcConnection getcnn() { return cnn; }
@@ -143,8 +143,8 @@ namespace COEJOBFAIR_Alpha
         {
             //SQL constants
             const string employe_db = "Employers_2016_S";
-            const string column_names = "(name, organization, title, hotel, other, nights, alumni)";
-            const string value_names = "(@name, @organization, @title, @hotel, @other, @nights, @alumni)";
+
+            const string value_names = "('@name', '@organization', '@title', '@hotel', '@other', '@nights', '@alumni')";
             string[] value = new string[7] {"@name", "@organization", "@title", "@hotel", "@other", "@nights", "@alumni" };
             /// <summary>
             /// class for employe funcitons to the database.
@@ -159,47 +159,30 @@ namespace COEJOBFAIR_Alpha
             ///     3 - hotel
             ///     4 - other
             ///     5 - amount of nights
+            ///     6 - alumni
             /// </param>
             public Employe_calls(string[] employe_data)
             {
-                odbc_cnn connection_1 = new odbc_cnn();
-                OdbcCommand command = new OdbcCommand();
+                try {
+                    odbc_cnn connection_1 = new odbc_cnn();
+                    OdbcCommand command = new OdbcCommand();
 
-                command.CommandType = CommandType.Text;
-                command.CommandText = "INSERT into " + employe_db + " ("+column_names+") VALUES ("+value_names+")";
-                int i = 0;
-                while(i<7)
-                {
-                    command.Parameters.AddWithValue(value[i],employe_data[i]);  //STEP THROUGH THIS MAKE SURE IT IS DOING WHAT YOU WANT REF : 1A
-                    i++;
+                    command.CommandType = CommandType.Text;
+                    command.CommandText = "INSERT into " + employe_db + " (name, organization, title, hotel, other, nights, alumni) VALUES ('" + employe_data[0] + "', '" + employe_data[1] + "', '" + employe_data[2] + "', '" + employe_data[3] + "', '" + employe_data[4] + "', '" + employe_data[5] + "', '" + employe_data[6] + "')";
+
+
+                    command.Connection = connection_1.getcnn();
+                    command.Connection.Open();
+                    command.ExecuteNonQuery();
+
+                    command.Connection.Close();
                 }
-
-                command.Connection = connection_1.getcnn();
-                command.ExecuteNonQuery();
-            }
-            /// <summary>
-            /// For Mass Import from Survery Monkey Import
-            /// </summary>
-            /// <param name="employe_data"></param>
-            /// <param name="table"></param>
-            public Employe_calls(string[] employe_data,string table) 
-            {
-                odbc_cnn connection_1 = new odbc_cnn();
-                OdbcCommand command = new OdbcCommand();
-
-                command.CommandType = CommandType.Text;
-                command.CommandText = "INSERT into " + table + " (" + column_names + ") VALUES (" + value_names + ")";
-
-                int i = 0;
-                while (i < 7)
+                catch
                 {
-                    command.Parameters.AddWithValue(value[i], employe_data[i]);  //STEP THROUGH THIS MAKE SURE IT IS DOING WHAT YOU WANT REF : 1A
-                    i++;
-                }
-
-                command.Connection = connection_1.getcnn();
-                command.ExecuteNonQuery();
+                    MessageBox.Show("Please Ask for help (Database Error)");                }
             }
+           
+           
         }
         }
     }
