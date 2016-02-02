@@ -35,6 +35,8 @@ namespace COEJOBFAIR_Alpha
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.employerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inputToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.debugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.debug_cnn_chck = new System.Windows.Forms.ToolStripMenuItem();
             this.databaseCheckToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,7 +65,11 @@ namespace COEJOBFAIR_Alpha
             // 
             this.txt_id.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+
+
             this.txt_id.Location = new System.Drawing.Point(821, 429);
+
             this.txt_id.Multiline = true;
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(453, 117);
@@ -79,9 +85,15 @@ namespace COEJOBFAIR_Alpha
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripDropDownButton1});
+<<<<<<< HEAD
+            this.statusStrip1.Location = new System.Drawing.Point(0, 583);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1398, 22);
+=======
             this.statusStrip1.Location = new System.Drawing.Point(0, 758);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1405, 22);
+>>>>>>> refs/remotes/origin/master
             this.statusStrip1.TabIndex = 9;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -89,12 +101,29 @@ namespace COEJOBFAIR_Alpha
             // 
             this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.employerToolStripMenuItem,
+            this.debugToolStripMenuItem});
             this.debugToolStripMenuItem,
             this.manualToolStripMenuItem});
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
             this.toolStripDropDownButton1.Size = new System.Drawing.Size(13, 20);
             this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
+            // 
+            // employerToolStripMenuItem
+            // 
+            this.employerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inputToolStripMenuItem});
+            this.employerToolStripMenuItem.Name = "employerToolStripMenuItem";
+            this.employerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.employerToolStripMenuItem.Text = "Employer";
+            // 
+            // inputToolStripMenuItem
+            // 
+            this.inputToolStripMenuItem.Name = "inputToolStripMenuItem";
+            this.inputToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.inputToolStripMenuItem.Text = "Input";
+            this.inputToolStripMenuItem.Click += new System.EventHandler(this.inputToolStripMenuItem_Click);
             // 
             // debugToolStripMenuItem
             // 
@@ -133,9 +162,15 @@ namespace COEJOBFAIR_Alpha
             this.status_cnn.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.status_cnn.Enabled = false;
             this.status_cnn.ForeColor = System.Drawing.Color.Cornsilk;
+<<<<<<< HEAD
+            this.status_cnn.Location = new System.Drawing.Point(0, 560);
+            this.status_cnn.Name = "status_cnn";
+            this.status_cnn.Size = new System.Drawing.Size(1398, 23);
+=======
             this.status_cnn.Location = new System.Drawing.Point(0, 735);
             this.status_cnn.Name = "status_cnn";
             this.status_cnn.Size = new System.Drawing.Size(1405, 23);
+>>>>>>> refs/remotes/origin/master
             this.status_cnn.TabIndex = 10;
             this.status_cnn.Text = "Connection";
             this.status_cnn.UseVisualStyleBackColor = false;
@@ -146,9 +181,15 @@ namespace COEJOBFAIR_Alpha
             this.status_db.BackColor = System.Drawing.Color.DarkGreen;
             this.status_db.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.status_db.ForeColor = System.Drawing.Color.Cornsilk;
+<<<<<<< HEAD
+            this.status_db.Location = new System.Drawing.Point(0, 537);
+            this.status_db.Name = "status_db";
+            this.status_db.Size = new System.Drawing.Size(1398, 23);
+=======
             this.status_db.Location = new System.Drawing.Point(0, 712);
             this.status_db.Name = "status_db";
             this.status_db.Size = new System.Drawing.Size(1405, 23);
+>>>>>>> refs/remotes/origin/master
             this.status_db.TabIndex = 12;
             this.status_db.Text = "Database";
             this.status_db.UseVisualStyleBackColor = false;
@@ -157,9 +198,15 @@ namespace COEJOBFAIR_Alpha
             // pBar1
             // 
             this.pBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
+<<<<<<< HEAD
+            this.pBar1.Location = new System.Drawing.Point(0, 511);
+            this.pBar1.Name = "pBar1";
+            this.pBar1.Size = new System.Drawing.Size(1398, 26);
+=======
             this.pBar1.Location = new System.Drawing.Point(0, 686);
             this.pBar1.Name = "pBar1";
             this.pBar1.Size = new System.Drawing.Size(1405, 26);
+>>>>>>> refs/remotes/origin/master
             this.pBar1.TabIndex = 13;
             this.pBar1.Visible = false;
             // 
@@ -285,11 +332,15 @@ namespace COEJOBFAIR_Alpha
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(1398, 605);
+=======
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(1405, 780);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grp_1);
+>>>>>>> refs/remotes/origin/master
             this.Controls.Add(this.pBar1);
             this.Controls.Add(this.status_db);
             this.Controls.Add(this.status_cnn);
@@ -327,6 +378,10 @@ namespace COEJOBFAIR_Alpha
         public System.Windows.Forms.ProgressBar pBar1;
         private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem databaseCheckToolStripMenuItem;
+<<<<<<< HEAD
+        private System.Windows.Forms.ToolStripMenuItem employerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inputToolStripMenuItem;
+=======
         private System.Windows.Forms.TextBox txt_first_name;
        // private System.Windows.Forms.TextBox txt_major;
         private System.Windows.Forms.TextBox txt_last_name;

@@ -18,7 +18,7 @@ namespace COEJOBFAIR_Alpha
         public string getfilename()
         {
             return openFileDialog1.FileName;
-        }     
+        }
         private void txt_id_TextChanged(object sender, EventArgs e)
         {
             string cur = txt_id.Text;
@@ -31,7 +31,7 @@ namespace COEJOBFAIR_Alpha
             }
             if (complete)
             {
-                             
+                
                 fill_info();
             }
         }
@@ -82,7 +82,7 @@ namespace COEJOBFAIR_Alpha
         /// populates the check info groupbox
         /// </summary>
         public void fill_info()
-        {            
+        {
             Data_cnct.calls main_call = new Data_cnct.calls(txt_id.Text);
             txt_first_name.Text = main_call.get_crd_data()[0];
             txt_last_name.Text = main_call.get_crd_data()[1];
@@ -98,32 +98,32 @@ namespace COEJOBFAIR_Alpha
            // {
                 this.grp_1.Visible = true;  //This is all that is needed when ON NO MAJOR BRANCH
           //  }
-        }
+            }
 
         public void PrintLabelUsingPrintJob()
         {
             try {
-                // get a reference to first connected printer
-                ILabelWriterPrinter printer = Framework.GetLabelWriterPrinters().First(p => p.IsConnected) as ILabelWriterPrinter;
+            // get a reference to first connected printer
+            ILabelWriterPrinter printer = Framework.GetLabelWriterPrinters().First(p => p.IsConnected) as ILabelWriterPrinter;
 
-                // create print job with default params
-                IPrintJob printJob = printer.CreatePrintJob(null);
-               
-                // open first label layout
+            // create print job with default params
+            IPrintJob printJob = printer.CreatePrintJob(null);
+
+            // open first label layout
                 ILabel label1 = DYMO.Label.Framework.Label.Open("NO_MAJOR.label");
-      
-                // print three labels using label from TextLabel1.label
 
+            // print three labels using label from TextLabel1.label
+            
                 label1.SetObjectText("name", txt_first_name.Text.ToString() + " " + txt_last_name.Text.ToString());
                 label1.SetObjectText("Grad", txt_Grad_Month.Text.ToString() + " " + txt_Grad_Year.Text.ToString());
                 //  label1.SetObjectText("MAJOR", txt_major.Text.ToString());
 
 
-                printJob.AddLabel(label1);
+            printJob.AddLabel(label1);
 
-                // send labels to print spooler
+            // send labels to print spooler
                
-               printJob.Print();
+            printJob.Print();
                 MessageBox.Show("Complete. Good Luck!");
                 reset();
             }
@@ -171,6 +171,19 @@ namespace COEJOBFAIR_Alpha
         private void manualToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.grp_1.Visible = true;
+        }
+
+        private void importToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Employer form = new Employer();
+            this.Visible = false;
+            form.Show();
+           
         }
     }
 }
