@@ -212,6 +212,7 @@ namespace COEJOBFAIR_Alpha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Firebrick;
             this.ClientSize = new System.Drawing.Size(1105, 572);
             this.Controls.Add(this.label3);
@@ -220,6 +221,7 @@ namespace COEJOBFAIR_Alpha
             this.Controls.Add(this.submit);
             this.Name = "Employer";
             this.Text = "Employer";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

@@ -103,33 +103,36 @@ namespace COEJOBFAIR_Alpha
         public void PrintLabelUsingPrintJob()
         {
             try {
-            // get a reference to first connected printer
-            ILabelWriterPrinter printer = Framework.GetLabelWriterPrinters().First(p => p.IsConnected) as ILabelWriterPrinter;
-
+                // get a reference to first connected printer
+                MessageBox.Show("Test0");
+                ILabelWriterPrinter printer = Framework.GetLabelWriterPrinters().First(p => p.IsConnected) as ILabelWriterPrinter;
+                MessageBox.Show("Test1");
             // create print job with default params
             IPrintJob printJob = printer.CreatePrintJob(null);
-
-            // open first label layout
+                MessageBox.Show("Test2");
+                // open first label layout
                 ILabel label1 = DYMO.Label.Framework.Label.Open("NO_MAJOR.label");
+                MessageBox.Show("Test3");
+                // print three labels using label from TextLabel1.label
 
-            // print three labels using label from TextLabel1.label
-            
                 label1.SetObjectText("name", txt_first_name.Text.ToString() + " " + txt_last_name.Text.ToString());
                 label1.SetObjectText("Grad", txt_Grad_Month.Text.ToString() + " " + txt_Grad_Year.Text.ToString());
                 //  label1.SetObjectText("MAJOR", txt_major.Text.ToString());
+                MessageBox.Show("Test4");
 
+                printJob.AddLabel(label1);
+                MessageBox.Show("Test5");
 
-            printJob.AddLabel(label1);
+                // send labels to print spooler
 
-            // send labels to print spooler
-               
-            printJob.Print();
+                printJob.Print();
                 MessageBox.Show("Complete. Good Luck!");
                 reset();
             }
-            catch
+            catch(Exception e)
             {
                 MessageBox.Show("Please Ask for help (Printer Error)");
+                MessageBox.Show(e.ToString());
             }
         }
 
@@ -173,17 +176,14 @@ namespace COEJOBFAIR_Alpha
             this.grp_1.Visible = true;
         }
 
-        private void importToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void inputToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void employerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Employer form = new Employer();
             this.Visible = false;
             form.Show();
-           
         }
     }
 }
