@@ -36,14 +36,17 @@
     <Reference Include="DYMO.Common">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DYMO\DYMO Label Software\Framework\DYMO.Common.dll</HintPath>
     </Reference>
-    <Reference Include="DYMO.DLS.Runtime, Version=8.5.1.1816, Culture=neutral, PublicKeyToken=5426002a38745af9, processorArchitecture=MSIL" />
-    <Reference Include="DYMO.Label.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5426002a38745af9, processorArchitecture=MSIL" />
+    <Reference Include="DYMO.DLS.Runtime, Version=8.5.1.1816, Culture=neutral, PublicKeyToken=5426002a38745af9, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DYMO\DYMO Label Software\Framework\.net4\DYMO.DLS.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DYMO.DLS.Runtime.TS">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DYMO\DYMO Label Software\Framework\DYMO.DLS.Runtime.TS.dll</HintPath>
+    </Reference>
+    <Reference Include="DYMO.Label.Framework">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DYMO\DYMO Label Software\Framework\DYMO.Label.Framework.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SurveyMonkeyApi, Version=1.3.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SurveyMonkeyApi.1.3.1\lib\SurveyMonkeyApi.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -112,17 +115,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="DYMOPrintingSupportLib">
-      <Guid>{A2AD17DC-26DB-4BEB-BF79-07B63AEA8E3D}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
-    <COMReference Include="InteropExtensionLib">
-      <Guid>{C3D19104-7A67-4EB0-B459-D5B2E734D430}</Guid>
+    <COMReference Include="Dymo">
+      <Guid>{DC8A996F-111D-42E2-BACF-EEC86F53B454}</Guid>
       <VersionMajor>1</VersionMajor>
       <VersionMinor>0</VersionMinor>
       <Lcid>0</Lcid>

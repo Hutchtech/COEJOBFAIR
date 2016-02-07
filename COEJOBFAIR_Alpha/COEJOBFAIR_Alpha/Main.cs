@@ -104,24 +104,19 @@ namespace COEJOBFAIR_Alpha
         {
             try {
                 // get a reference to first connected printer
-                MessageBox.Show("Test0");
+              
                 ILabelWriterPrinter printer = Framework.GetLabelWriterPrinters().First(p => p.IsConnected) as ILabelWriterPrinter;
-                MessageBox.Show("Test1");
             // create print job with default params
             IPrintJob printJob = printer.CreatePrintJob(null);
-                MessageBox.Show("Test2");
                 // open first label layout
                 ILabel label1 = DYMO.Label.Framework.Label.Open("NO_MAJOR.label");
-                MessageBox.Show("Test3");
                 // print three labels using label from TextLabel1.label
 
                 label1.SetObjectText("name", txt_first_name.Text.ToString() + " " + txt_last_name.Text.ToString());
                 label1.SetObjectText("Grad", txt_Grad_Month.Text.ToString() + " " + txt_Grad_Year.Text.ToString());
                 //  label1.SetObjectText("MAJOR", txt_major.Text.ToString());
-                MessageBox.Show("Test4");
 
                 printJob.AddLabel(label1);
-                MessageBox.Show("Test5");
 
                 // send labels to print spooler
 

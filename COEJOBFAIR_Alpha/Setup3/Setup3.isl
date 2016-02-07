@@ -341,14 +341,16 @@
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
 		<row><td>COEJOBFAIR_Alpha.Content_Files</td><td>{6DC6B61D-154B-43EB-B358-14B70407AE5C}</td><td>INSTALLDIR</td><td>2</td><td/><td>coejobfair_alpha.content_fil</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>COEJOBFAIR_Alpha.Primary_output</td><td>{4D0DD641-FFD1-48D4-BA02-E387A98ABBB9}</td><td>INSTALLDIR</td><td>2</td><td/><td>coejobfair_alpha.primary_out</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>COEJOBFAIR_Alpha.exe</td><td>{86B79612-4899-4B0C-8896-FFCF62B891AC}</td><td>PROGRAM_FILES</td><td>2</td><td/><td>coejobfair_alpha.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>COEJOBFAIR_Alpha.vshost.exe</td><td>{CC95ABF8-E325-49AB-8464-B12A30B3A08C}</td><td>PROGRAM_FILES</td><td>2</td><td/><td>coejobfair_alpha.vshost.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>DYMO.DLS.Runtime.dll</td><td>{02965EDE-4CD6-4FDF-879C-ECC42D52F0E2}</td><td>PROGRAM_FILES</td><td>2</td><td/><td>dymo.dls.runtime.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>DYMO.Label.Framework.dll</td><td>{BA0276E0-3F19-4FBB-97E5-FD52EA2BD314}</td><td>PROGRAM_FILES</td><td>2</td><td/><td>dymo.label.framework.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>COEJOBFAIR_Alpha.exe</td><td>{A1900A06-4A7B-485B-8619-3CA68D9DC4A8}</td><td>PROGRAM_FILES</td><td>2</td><td/><td>coejobfair_alpha.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>COEJOBFAIR_Alpha.vshost.exe</td><td>{770B8A6F-B009-4B24-90B0-C2EAC2BFFEA8}</td><td>PROGRAM_FILES</td><td>2</td><td/><td>coejobfair_alpha.vshost.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>DLSSDKCOMLibrary.dll</td><td>{C46BBC8D-79C9-4C14-834F-78C9E1600479}</td><td>PROGRAM_FILES</td><td>2</td><td/><td>dlssdkcomlibrary.dll</td><td>20</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>DYMO.Common.dll</td><td>{C4F08C0F-8CF6-497C-A02F-061B6ABFD1A4}</td><td>PROGRAM_FILES</td><td>2</td><td/><td>dymo.common.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>DYMO.DLS.Runtime.TS.dll</td><td>{C3578371-989E-4BCD-B8DF-1E257185C528}</td><td>PROGRAM_FILES</td><td>2</td><td/><td>dymo.dls.runtime.ts.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>DYMO.DLS.Runtime.dll</td><td>{7BDED24B-3164-49EE-BF0F-F727DC4B38D0}</td><td>PROGRAM_FILES</td><td>2</td><td/><td>dymo.dls.runtime.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>DYMO.Label.Framework.dll</td><td>{F7507E18-092B-44DB-8610-923A91EA3013}</td><td>PROGRAM_FILES</td><td>2</td><td/><td>dymo.label.framework.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{91FAC0F4-349B-4F2A-82AC-A2C725375F1B}</td><td>PROGRAM_FILES</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Interop.Dymo.dll</td><td>{67CE4E82-617D-4BE7-AAB5-EC13BB9F56B5}</td><td>PROGRAM_FILES</td><td>2</td><td/><td>interop.dymo.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Newtonsoft.Json.dll</td><td>{93CC96E1-C6FB-4835-AB05-3E2B1B03BA83}</td><td>PROGRAM_FILES</td><td>2</td><td/><td>newtonsoft.json.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>SurveyMonkeyApi.dll</td><td>{667C6B85-EFA1-4416-B3C6-8C2FB2D7ED94}</td><td>PROGRAM_FILES</td><td>2</td><td/><td>surveymonkeyapi.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Interop.Dymo.dll</td><td>{33BF4FD9-06BA-4A5F-954D-3D536D964026}</td><td>PROGRAM_FILES</td><td>2</td><td/><td>interop.dymo.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Newtonsoft.Json.dll</td><td>{D9FC9C0A-3A5E-432F-8AAA-9CA99C10B576}</td><td>PROGRAM_FILES</td><td>2</td><td/><td>newtonsoft.json.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1061,20 +1063,24 @@
 		<row><td>INSTALLDIR</td><td>COEJOBFAIR_Alpha.Primary_output</td></row>
 		<row><td>INSTALLDIR</td><td>COEJOBFAIR_Alpha.exe</td></row>
 		<row><td>INSTALLDIR</td><td>COEJOBFAIR_Alpha.vshost.exe</td></row>
+		<row><td>INSTALLDIR</td><td>DLSSDKCOMLibrary.dll</td></row>
+		<row><td>INSTALLDIR</td><td>DYMO.Common.dll</td></row>
+		<row><td>INSTALLDIR</td><td>DYMO.DLS.Runtime.TS.dll</td></row>
 		<row><td>INSTALLDIR</td><td>DYMO.DLS.Runtime.dll</td></row>
 		<row><td>INSTALLDIR</td><td>DYMO.Label.Framework.dll</td></row>
 		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>INSTALLDIR</td><td>Interop.Dymo.dll</td></row>
 		<row><td>INSTALLDIR</td><td>Newtonsoft.Json.dll</td></row>
-		<row><td>INSTALLDIR</td><td>SurveyMonkeyApi.dll</td></row>
 		<row><td>PROGRAM_FILES</td><td>COEJOBFAIR_Alpha.exe</td></row>
 		<row><td>PROGRAM_FILES</td><td>COEJOBFAIR_Alpha.vshost.exe</td></row>
+		<row><td>PROGRAM_FILES</td><td>DLSSDKCOMLibrary.dll</td></row>
+		<row><td>PROGRAM_FILES</td><td>DYMO.Common.dll</td></row>
+		<row><td>PROGRAM_FILES</td><td>DYMO.DLS.Runtime.TS.dll</td></row>
 		<row><td>PROGRAM_FILES</td><td>DYMO.DLS.Runtime.dll</td></row>
 		<row><td>PROGRAM_FILES</td><td>DYMO.Label.Framework.dll</td></row>
 		<row><td>PROGRAM_FILES</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>PROGRAM_FILES</td><td>Interop.Dymo.dll</td></row>
 		<row><td>PROGRAM_FILES</td><td>Newtonsoft.Json.dll</td></row>
-		<row><td>PROGRAM_FILES</td><td>SurveyMonkeyApi.dll</td></row>
 	</table>
 
 	<table name="CustomAction">
@@ -1891,12 +1897,14 @@
 		<row><td>AlwaysInstall</td><td>COEJOBFAIR_Alpha.Primary_output</td></row>
 		<row><td>AlwaysInstall</td><td>COEJOBFAIR_Alpha.exe</td></row>
 		<row><td>AlwaysInstall</td><td>COEJOBFAIR_Alpha.vshost.exe</td></row>
+		<row><td>AlwaysInstall</td><td>DLSSDKCOMLibrary.dll</td></row>
+		<row><td>AlwaysInstall</td><td>DYMO.Common.dll</td></row>
+		<row><td>AlwaysInstall</td><td>DYMO.DLS.Runtime.TS.dll</td></row>
 		<row><td>AlwaysInstall</td><td>DYMO.DLS.Runtime.dll</td></row>
 		<row><td>AlwaysInstall</td><td>DYMO.Label.Framework.dll</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>AlwaysInstall</td><td>Interop.Dymo.dll</td></row>
 		<row><td>AlwaysInstall</td><td>Newtonsoft.Json.dll</td></row>
-		<row><td>AlwaysInstall</td><td>SurveyMonkeyApi.dll</td></row>
 	</table>
 
 	<table name="File">
@@ -1911,7 +1919,6 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>__3_2016_12_09_21_pm.txt</td><td>ISX_DEFAULTCOMPONENT</td><td>2-3-20~1.TXT|2-3-2016 12-09-21 PM.txt</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\Setup3\Setup3\Express\DVD-5\LogFiles\2-3-2016 12-09-21 PM.txt</td><td>1</td><td/></row>
 		<row><td>coejobfair_alpha.content_fil</td><td>COEJOBFAIR_Alpha.Content_Files</td><td>COEJOBFAIR_Alpha.Content Files</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;COEJOBFAIR_Alpha&gt;|ContentFiles</td><td>3</td><td/></row>
 		<row><td>coejobfair_alpha.exe</td><td>COEJOBFAIR_Alpha.exe</td><td>COEJOB~1.EXE|COEJOBFAIR_Alpha.exe</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\bin\Debug\COEJOBFAIR_Alpha.exe</td><td>1</td><td/></row>
 		<row><td>coejobfair_alpha.exe.config</td><td>ISX_DEFAULTCOMPONENT</td><td>COEJOB~1.CON|COEJOBFAIR_Alpha.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\bin\Debug\COEJOBFAIR_Alpha.exe.config</td><td>1</td><td/></row>
@@ -1920,14 +1927,17 @@
 		<row><td>coejobfair_alpha.vshost.exe</td><td>COEJOBFAIR_Alpha.vshost.exe</td><td>COEJOB~1.EXE|COEJOBFAIR_Alpha.vshost.exe</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\bin\Debug\COEJOBFAIR_Alpha.vshost.exe</td><td>1</td><td/></row>
 		<row><td>coejobfair_alpha.vshost.exe.</td><td>ISX_DEFAULTCOMPONENT</td><td>COEJOB~1.CON|COEJOBFAIR_Alpha.vshost.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\bin\Debug\COEJOBFAIR_Alpha.vshost.exe.config</td><td>1</td><td/></row>
 		<row><td>coejobfair_alpha.vshost.exe.1</td><td>ISX_DEFAULTCOMPONENT</td><td>COEJOB~1.MAN|COEJOBFAIR_Alpha.vshost.exe.manifest</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\bin\Debug\COEJOBFAIR_Alpha.vshost.exe.manifest</td><td>1</td><td/></row>
+		<row><td>dlssdkcomlibrary.dll</td><td>DLSSDKCOMLibrary.dll</td><td>DLSSDK~1.DLL|DLSSDKCOMLibrary.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Google Drive\Jobfair\program files\Texas Tech Whitcacre College of Engineering\My Product Name\Program files\DLSSDKCOMLibrary.dll</td><td>1</td><td/></row>
+		<row><td>dymo.common.dll</td><td>DYMO.Common.dll</td><td>DYMOCO~1.DLL|DYMO.Common.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\bin\Debug\DYMO.Common.dll</td><td>1</td><td/></row>
 		<row><td>dymo.dls.runtime.dll</td><td>DYMO.DLS.Runtime.dll</td><td>DYMODL~1.DLL|DYMO.DLS.Runtime.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\bin\Debug\DYMO.DLS.Runtime.dll</td><td>1</td><td/></row>
+		<row><td>dymo.dls.runtime.ts.dll</td><td>DYMO.DLS.Runtime.TS.dll</td><td>DYMODL~1.DLL|DYMO.DLS.Runtime.TS.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\bin\Debug\DYMO.DLS.Runtime.TS.dll</td><td>1</td><td/></row>
 		<row><td>dymo.label.framework.dll</td><td>DYMO.Label.Framework.dll</td><td>DYMOLA~1.DLL|DYMO.Label.Framework.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\bin\Debug\DYMO.Label.Framework.dll</td><td>1</td><td/></row>
+		<row><td>dymo.label.framework.xml</td><td>ISX_DEFAULTCOMPONENT</td><td>DYMOLA~1.XML|DYMO.Label.Framework.xml</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\bin\Debug\DYMO.Label.Framework.xml</td><td>1</td><td/></row>
 		<row><td>employe.label</td><td>ISX_DEFAULTCOMPONENT</td><td>EMPLOY~1.LAB|Employe.label</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\bin\Debug\Employe.label</td><td>1</td><td/></row>
-		<row><td>interop.dymo.dll</td><td>Interop.Dymo.dll</td><td>INTERO~1.DLL|Interop.Dymo.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\bin\Debug\Interop.Dymo.dll</td><td>1</td><td/></row>
+		<row><td>interop.dymo.dll</td><td>Interop.Dymo.dll</td><td>INTERO~1.DLL|Interop.Dymo.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\obj\Debug\Interop.Dymo.dll</td><td>1</td><td/></row>
 		<row><td>newtonsoft.json.dll</td><td>Newtonsoft.Json.dll</td><td>NEWTON~1.DLL|Newtonsoft.Json.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\bin\Debug\Newtonsoft.Json.dll</td><td>1</td><td/></row>
 		<row><td>newtonsoft.json.xml</td><td>ISX_DEFAULTCOMPONENT</td><td>NEWTON~1.XML|Newtonsoft.Json.xml</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\bin\Debug\Newtonsoft.Json.xml</td><td>1</td><td/></row>
 		<row><td>no_major.label</td><td>ISX_DEFAULTCOMPONENT</td><td>NO_MAJ~1.LAB|NO_MAJOR.label</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\bin\Debug\NO_MAJOR.label</td><td>1</td><td/></row>
-		<row><td>surveymonkeyapi.dll</td><td>SurveyMonkeyApi.dll</td><td>SURVEY~1.DLL|SurveyMonkeyApi.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\ryan\Source\Repos\COEJOBFAIR\COEJOBFAIR_Alpha\COEJOBFAIR_Alpha\bin\Debug\SurveyMonkeyApi.dll</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2071,14 +2081,16 @@
 		<col def="S0">Miscellaneous</col>
 		<row><td>COEJOBFAIR_Alpha.Content_Files</td><td/><td/><td>_65353A6D_5163_4EF7_BA91_38115923331D_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>COEJOBFAIR_Alpha.Primary_output</td><td/><td/><td>_208566AF_78AB_46A8_996E_2D3BEB26644C_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>COEJOBFAIR_Alpha.exe</td><td/><td/><td>_9E211E99_4AAD_4140_8566_6CD93BE70ADC_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>COEJOBFAIR_Alpha.vshost.exe</td><td/><td/><td>_8A57B5D9_4392_4EA3_AB79_85ED38735E62_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>DYMO.DLS.Runtime.dll</td><td/><td/><td>_8CD96282_FCCB_486E_83AC_4BAFEE4A3408_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>DYMO.Label.Framework.dll</td><td/><td/><td>_214B351D_C357_4706_9790_7D91F99A1EC0_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>COEJOBFAIR_Alpha.exe</td><td/><td/><td>_8AB92608_9AFC_462C_99E8_70A5CA21154E_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>COEJOBFAIR_Alpha.vshost.exe</td><td/><td/><td>_4F261C6C_75D7_414F_95DC_505F27A2AA56_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>DLSSDKCOMLibrary.dll</td><td/><td/><td>_6A2D81F0_C4F2_4D10_88B6_A389B172241B_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>DYMO.Common.dll</td><td/><td/><td>_D76C595A_2B66_443E_BC1E_DB35985AA09A_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>DYMO.DLS.Runtime.TS.dll</td><td/><td/><td>_82633822_6B9C_4565_B7F6_53D0276F02D7_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>DYMO.DLS.Runtime.dll</td><td/><td/><td>_8EF6A58A_8EDB_49F6_A0FC_DB7F0C24EDEE_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>DYMO.Label.Framework.dll</td><td/><td/><td>_C6BA7F94_5A0B_4A8D_B86C_756A0856E7C0_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_393538BE_EFD0_456C_BE23_FE85075F931B_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Interop.Dymo.dll</td><td/><td/><td>_0C8F123B_2B79_4B26_A159_095FA2075904_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Newtonsoft.Json.dll</td><td/><td/><td>_E68E642A_48A7_43D3_8F7C_4BAA69320D26_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>SurveyMonkeyApi.dll</td><td/><td/><td>_30F1DF59_58EC_4873_8CE1_2B841F7E2101_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Interop.Dymo.dll</td><td/><td/><td>_CFA37655_F96B_4447_9053_A9AD8732C3D6_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Newtonsoft.Json.dll</td><td/><td/><td>_66537280_EDAE_4B1A_9F43_8D9306183672_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -2667,7 +2679,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>Texas Tech Whitcacre College of Engineering</td><td>0</td><td/><td>421807339</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>Texas Tech Whitcacre College of Engineering</td><td>0</td><td/><td>824478359</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>421846187</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>421846187</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_OS</td><td>1033</td><td>The operating system is not adequate for running [ProductName].</td><td>0</td><td/><td>421846187</td></row>
@@ -3481,6 +3493,8 @@
 		<row><td>IDS_SETUPEXE_LAUNCH_COND_E</td><td>1033</td><td>This setup was built with an evaluation version of InstallShield and can only be launched from setup.exe.</td><td>0</td><td/><td>421846187</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME1</td><td>1033</td><td>LAUNCH~1.EXE|Launch COEJOBFAIR_Alpha.exe</td><td>0</td><td/><td>421838059</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME2</td><td>1033</td><td>LAUNCH~1.EXE|Launch COEJOBFAIR_Alpha.vshost.exe</td><td>0</td><td/><td>421838059</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME3</td><td>1033</td><td>LAUNCH~1.EXE|Launch COEJOBFAIR_Alpha.exe</td><td>0</td><td/><td>824484599</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME4</td><td>1033</td><td>LAUNCH~1.EXE|Launch COEJOBFAIR_Alpha.vshost.exe</td><td>0</td><td/><td>824484599</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO</td><td>1033</td><td>From the list of servers below, select the database server you would like to target.</td><td>0</td><td/><td>421846187</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1033</td><td>From the list of catalog names below, select the database catalog you would like to target.</td><td>0</td><td/><td>421846187</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1033</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>421846187</td></row>
@@ -3769,8 +3783,8 @@
 		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>421846187</td></row>
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>421846187</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>421846187</td></row>
-		<row><td>ID_STRING1</td><td>1033</td><td>http://www.TexasTechWhitcacreCollegeofEngineering.com</td><td>0</td><td/><td>421807339</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>Texas Tech Whitcacre College of Engineering</td><td>0</td><td/><td>421807339</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>http://www.TexasTechWhitcacreCollegeofEngineering.com</td><td>0</td><td/><td>824478359</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>Texas Tech Whitcacre College of Engineering</td><td>0</td><td/><td>824478359</td></row>
 		<row><td>ID_STRING3</td><td>1033</td><td>LAUNCH~1.EXE|Launch COEJOBFAIR_Alpha.exe</td><td>0</td><td/><td>421846251</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>421846187</td></row>
 	</table>
@@ -3888,7 +3902,9 @@
 		<row><td>ARPPRODUCTICON.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\setupicon.ico</td><td>0</td></row>
 		<row><td>COEJOBFAIR_Alpha.e_6585BE2535F041AF8A70705D436834CF.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>COEJOBFAIR_Alpha.e_792D9FFF39614F0585B59DDAFD2A20AA.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>COEJOBFAIR_Alpha.e_F5AE448BDD8B4AEDB72BA491E0D8F2FB.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>COEJOBFAIR_Alpha.v_32A32151F8A346BDA9CCD7A0C1511C29.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>COEJOBFAIR_Alpha.v_8AE2C54675374A7F9EE3236565025F48.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 	</table>
 
 	<table name="IniFile">
@@ -4472,8 +4488,6 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="i2">InstallMode</col>
 		<row><td>COEJOBFAIR_Alpha.exe</td><td>COEJOBFAIR_Alpha.exe</td><td/><td>setup3</td><td>2</td></row>
 		<row><td>COEJOBFAIR_Alpha.vshost.exe</td><td>COEJOBFAIR_Alpha.vshost.exe</td><td/><td>setup3</td><td>2</td></row>
-		<row><td>FileKey1</td><td>COEJOBFAIR_Alpha.exe</td><td/><td>texast_1_texas_tech_whitcacre_college_of_engineering</td><td>2</td></row>
-		<row><td>FileKey2</td><td>COEJOBFAIR_Alpha.exe</td><td/><td>setup3</td><td>2</td></row>
 	</table>
 
 	<table name="RemoveIniFile">
@@ -4559,9 +4573,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>COEJOBFAIR_Alpha.exe</td><td>setup3</td><td>##IDS_SHORTCUT_DISPLAY_NAME1##</td><td>COEJOBFAIR_Alpha.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>COEJOBFAIR_Alpha.e_792D9FFF39614F0585B59DDAFD2A20AA.exe</td><td>0</td><td>1</td><td>PROGRAM_FILES</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>COEJOBFAIR_Alpha.exe1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME1##</td><td>COEJOBFAIR_Alpha.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>COEJOBFAIR_Alpha.e_6585BE2535F041AF8A70705D436834CF.exe</td><td>0</td><td>1</td><td>PROGRAM_FILES</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>COEJOBFAIR_Alpha.vshost.exe</td><td>setup3</td><td>##IDS_SHORTCUT_DISPLAY_NAME2##</td><td>COEJOBFAIR_Alpha.vshost.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>COEJOBFAIR_Alpha.v_32A32151F8A346BDA9CCD7A0C1511C29.exe</td><td>0</td><td>1</td><td>PROGRAM_FILES</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>COEJOBFAIR_Alpha.exe</td><td>setup3</td><td>##IDS_SHORTCUT_DISPLAY_NAME3##</td><td>COEJOBFAIR_Alpha.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>COEJOBFAIR_Alpha.e_F5AE448BDD8B4AEDB72BA491E0D8F2FB.exe</td><td>0</td><td>1</td><td>PROGRAM_FILES</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>COEJOBFAIR_Alpha.vshost.exe</td><td>setup3</td><td>##IDS_SHORTCUT_DISPLAY_NAME4##</td><td>COEJOBFAIR_Alpha.vshost.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>COEJOBFAIR_Alpha.v_8AE2C54675374A7F9EE3236565025F48.exe</td><td>0</td><td>1</td><td>PROGRAM_FILES</td><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">

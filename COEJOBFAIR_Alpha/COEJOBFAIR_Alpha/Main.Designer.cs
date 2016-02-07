@@ -40,6 +40,7 @@ namespace COEJOBFAIR_Alpha
             this.databaseCheckToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.employerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.status_cnn = new System.Windows.Forms.Button();
             this.status_db = new System.Windows.Forms.Button();
             this.pBar1 = new System.Windows.Forms.ProgressBar();
@@ -53,7 +54,6 @@ namespace COEJOBFAIR_Alpha
             this.btn_choose = new System.Windows.Forms.Button();
             this.cmb_choice = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.employerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.grp_1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -64,10 +64,10 @@ namespace COEJOBFAIR_Alpha
             // 
             this.txt_id.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_id.Location = new System.Drawing.Point(821, 429);
+            this.txt_id.Location = new System.Drawing.Point(503, 362);
             this.txt_id.Multiline = true;
             this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(453, 117);
+            this.txt_id.Size = new System.Drawing.Size(453, 127);
             this.txt_id.TabIndex = 0;
             this.txt_id.Text = "R1257448";
             this.txt_id.TextChanged += new System.EventHandler(this.txt_id_TextChanged);
@@ -105,7 +105,7 @@ namespace COEJOBFAIR_Alpha
             this.databaseCheckToolStripMenuItem,
             this.resetToolStripMenuItem});
             this.debugToolStripMenuItem.Name = "debugToolStripMenuItem";
-            this.debugToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.debugToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.debugToolStripMenuItem.Text = "Debug";
             // 
             // debug_cnn_chck
@@ -132,9 +132,16 @@ namespace COEJOBFAIR_Alpha
             // manualToolStripMenuItem
             // 
             this.manualToolStripMenuItem.Name = "manualToolStripMenuItem";
-            this.manualToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.manualToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.manualToolStripMenuItem.Text = "Manual";
             this.manualToolStripMenuItem.Click += new System.EventHandler(this.manualToolStripMenuItem_Click);
+            // 
+            // employerToolStripMenuItem
+            // 
+            this.employerToolStripMenuItem.Name = "employerToolStripMenuItem";
+            this.employerToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.employerToolStripMenuItem.Text = "Employer";
+            this.employerToolStripMenuItem.Click += new System.EventHandler(this.employerToolStripMenuItem_Click);
             // 
             // status_cnn
             // 
@@ -197,7 +204,7 @@ namespace COEJOBFAIR_Alpha
             this.grp_1.Controls.Add(this.txt_last_name);
             this.grp_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grp_1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.grp_1.Location = new System.Drawing.Point(211, 252);
+            this.grp_1.Location = new System.Drawing.Point(12, 252);
             this.grp_1.Name = "grp_1";
             this.grp_1.Size = new System.Drawing.Size(485, 237);
             this.grp_1.TabIndex = 19;
@@ -276,18 +283,11 @@ namespace COEJOBFAIR_Alpha
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(702, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(89, 18);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(713, 228);
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
-            // 
-            // employerToolStripMenuItem
-            // 
-            this.employerToolStripMenuItem.Name = "employerToolStripMenuItem";
-            this.employerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.employerToolStripMenuItem.Text = "Employer";
-            this.employerToolStripMenuItem.Click += new System.EventHandler(this.employerToolStripMenuItem_Click);
             // 
             // Main
             // 

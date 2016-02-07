@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COEJOBFAIR_Alpha", "COEJOBFAIR_Alpha\COEJOBFAIR_Alpha.csproj", "{773BEA6D-F826-4311-9CBF-333D2DAD156E}"
 EndProject
 Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup3", "Setup3\Setup3.isproj", "{0D908506-1A65-4F8B-A0E0-69209F35F1C0}"
-	ProjectSection(ProjectDependencies) = postProject
-		{773BEA6D-F826-4311-9CBF-333D2DAD156E} = {773BEA6D-F826-4311-9CBF-333D2DAD156E}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
