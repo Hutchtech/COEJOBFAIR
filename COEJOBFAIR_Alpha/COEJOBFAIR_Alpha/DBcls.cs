@@ -12,7 +12,7 @@ namespace COEJOBFAIR_Alpha
 {
     class Data_cnct : Main
     {
-        
+
         private class odbc_comand
         {
             OdbcCommand cmd;
@@ -34,22 +34,22 @@ namespace COEJOBFAIR_Alpha
                 try
                 {
                     cnn = new OdbcConnection("DSN=COEJOBFAIR;UID=ttu\\coe_ponos_admin;PWD = T~E95UeocGg_;");
-            }
+                }
                 catch
                 {
                     MessageBox.Show("Please Ask for Help (Connection Error)");
                 }
 
-        }
+            }
 
-            public OdbcConnection getcnn() { if (cnn != null) return cnn; else { MessageBox.Show("Error");return cnn; } }
+            public OdbcConnection getcnn() { if (cnn != null) return cnn; else { MessageBox.Show("Error"); return cnn; } }
         }
 
         public class calls
         {
             string[] data_name_crd = new string[10];
             string Rnum;
-           
+
             public calls(string s)
             {
                 Rnum = s;
@@ -67,15 +67,16 @@ namespace COEJOBFAIR_Alpha
 
             public void mainDBCall()
             {
-                try {
-                odbc_cnn connection_1 = new odbc_cnn();
-                    odbc_comand command_1 = new odbc_comand("SELECT * FROM Student_Job_Fair WHERE Student_Tech_ID = 'R"+Rnum+"';");
-
-                command_1.getcmd().Connection = connection_1.getcnn();
-                connection_1.getcnn().Open();
-                OdbcDataReader reader = command_1.getcmd().ExecuteReader();
-                while (reader.Read())
+                try
                 {
+                    odbc_cnn connection_1 = new odbc_cnn();
+                    odbc_comand command_1 = new odbc_comand("SELECT * FROM Student_Job_Fair WHERE Student_Tech_ID = 'R" + Rnum + "';");
+
+                    command_1.getcmd().Connection = connection_1.getcnn();
+                    connection_1.getcnn().Open();
+                    OdbcDataReader reader = command_1.getcmd().ExecuteReader();
+                    while (reader.Read())
+                    {
                         data_name_crd[0] = reader[0].ToString(); //First
                         data_name_crd[1] = reader[1].ToString(); //Last
                         data_name_crd[2] = reader[2].ToString(); //Month
@@ -83,17 +84,37 @@ namespace COEJOBFAIR_Alpha
                         data_name_crd[4] = reader[4].ToString(); //Id
                         data_name_crd[5] = reader[5].ToString(); //Pre
                         data_name_crd[6] = reader[6].ToString(); //Fair
-                }
+                    }
 
-                reader.Close();
-                connection_1.getcnn().Close();
+                    reader.Close();
+                    connection_1.getcnn().Close();
                 }
                 catch
                 {
                     MessageBox.Show("Please Ask for Help (Database Error)");
                 }
-                 
+                try
+                {
+                    odbc_cnn connection_1 = new odbc_cnn();
+                    OdbcCommand command = new OdbcCommand();
+
+                    command.CommandType = CommandType.Text;
+                    command.CommandText = "UPDATE Student_Job_Fair SET  Pre_Register = '1' WHERE Student_Tech_ID = 'R" + Rnum + "';";
+
+
+                    command.Connection = connection_1.getcnn();
+                    command.Connection.Open();
+                    command.ExecuteNonQuery();
+
+                    command.Connection.Close();
+                }
+                catch
+                {
+                    MessageBox.Show("Please Ask for help (Database Error)");
+                }
             }
+
+      
          
             public bool connection_chck()
             {
@@ -202,6 +223,33 @@ namespace COEJOBFAIR_Alpha
            
            
             }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // status_cnn
+            // 
+            this.status_cnn.Size = new System.Drawing.Size(1418, 23);
+            // 
+            // status_db
+            // 
+            this.status_db.Size = new System.Drawing.Size(1418, 23);
+            // 
+            // pBar1
+            // 
+            this.pBar1.Size = new System.Drawing.Size(1418, 26);
+            // 
+            // Data_cnct
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(1418, 780);
+            this.Location = new System.Drawing.Point(0, 0);
+            this.Name = "Data_cnct";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
+    }
     }
 
