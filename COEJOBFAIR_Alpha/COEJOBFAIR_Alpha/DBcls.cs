@@ -49,9 +49,12 @@ namespace COEJOBFAIR_Alpha
         {
             string[] data_name_crd = new string[10];
             string Rnum;
+            bool pre_reg;
 
-            public calls(string s)
+            
+            public calls(string s, bool pre_reg)
             {
+                this.pre_reg = pre_reg;
                 Rnum = s;
                 mainDBCall();
             }
@@ -99,8 +102,14 @@ namespace COEJOBFAIR_Alpha
                     OdbcCommand command = new OdbcCommand();
 
                     command.CommandType = CommandType.Text;
-                    command.CommandText = "UPDATE Student_Job_Fair SET  Pre_Register = '1' WHERE Student_Tech_ID = 'R" + Rnum + "';";
-
+                    if (pre_reg)
+                    {
+                        command.CommandText = "UPDATE Student_Job_Fair SET  Pre_Register = '1' WHERE Student_Tech_ID = 'R" + Rnum + "';";
+                    }
+                    else
+                    {
+                        command.CommandText = "UPDATE Student_Job_Fair SET  Pre_Register = '0' WHERE Student_Tech_ID = 'R" + Rnum + "';";
+                    }
 
                     command.Connection = connection_1.getcnn();
                     command.Connection.Open();

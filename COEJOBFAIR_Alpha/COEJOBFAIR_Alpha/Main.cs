@@ -10,6 +10,7 @@ namespace COEJOBFAIR_Alpha
 {
     public partial class Main : Form
     {
+        bool Pre_Register = false;
         public Main()
         {
             InitializeComponent();
@@ -38,6 +39,10 @@ namespace COEJOBFAIR_Alpha
                 fill_info();
             }
         }
+
+
+        
+        #region Debug
         private void debug_connection(object sender, EventArgs e)
         {
             pBar1.Show();
@@ -80,6 +85,8 @@ namespace COEJOBFAIR_Alpha
             pBar1.Value = 100;
 
         }
+#endregion
+
 
         /// <summary>Takes RNum and populates if in JobGrid
         /// <para>Uses the txt_id field to get Rnum and uses that to check and make sure that the RNUM exists in Job Grid
@@ -87,7 +94,7 @@ namespace COEJOBFAIR_Alpha
         /// </summary>
         public void fill_info()
         {
-            Data_cnct.calls main_call = new Data_cnct.calls(txt_id.Text);
+            Data_cnct.calls main_call = new Data_cnct.calls(txt_id.Text,Pre_Register);
             txt_first_name.Text = main_call.get_crd_data()[0];
             txt_last_name.Text = main_call.get_crd_data()[1];
             txt_Grad_Month.Text = main_call.get_crd_data()[2];
@@ -100,14 +107,15 @@ namespace COEJOBFAIR_Alpha
         {
             try {
                 // get a reference to first connected printer
-              
                 ILabelWriterPrinter printer = Framework.GetLabelWriterPrinters().First(p => p.IsConnected) as ILabelWriterPrinter;
-            // create print job with default params
-            IPrintJob printJob = printer.CreatePrintJob(null);
+
+                // create print job with default params
+                IPrintJob printJob = printer.CreatePrintJob(null);
+
                 // open first label layout
                 ILabel label1 = DYMO.Label.Framework.Label.Open("NO_MAJOR.label");
-                // print three labels using label from TextLabel1.label
 
+                // print three labels using label from TextLabel1.label
                 label1.SetObjectText("name", txt_first_name.Text.ToString() + " " + txt_last_name.Text.ToString());
                 label1.SetObjectText("Grad", txt_Grad_Month.Text.ToString() + " " + txt_Grad_Year.Text.ToString());
                 //  label1.SetObjectText("MAJOR", txt_major.Text.ToString());
@@ -127,6 +135,8 @@ namespace COEJOBFAIR_Alpha
             }
         }
 
+
+        #region Resets
         private void resetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             status_db.Hide();
@@ -150,12 +160,8 @@ namespace COEJOBFAIR_Alpha
             this.txt_id.Text = "";
             this.txt_id.Focus();
         }
+        #endregion
 
-        //private void btn_choose_Click(object sender, EventArgs e)
-        //{
-        //    txt_major.Text = cmb_choice.Text.ToString();
-        //    this.grp_1.Visible = true;
-        //}
 
         private void btn_print_Click(object sender, EventArgs e)
         {
@@ -167,14 +173,26 @@ namespace COEJOBFAIR_Alpha
             this.grp_1.Visible = true;
         }
 
-
-
-
+        /// <summary>
+        /// Opens employer window for use with unregistered employers.
+        /// </summary>
         private void employerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Employer form = new Employer();
             this.Visible = false;
             form.Show();
+        }
+
+        private void onToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pre_Register = true;
+            this.btn_preregon.ForeColor = System.Drawing.Color.Green;
+        }
+
+        private void btn_preregoff_Click(object sender, EventArgs e)
+        {
+            Pre_Register = false;
+            this.btn_preregoff.ForeColor = System.Drawing.Color.Red;
         }
     }
 }

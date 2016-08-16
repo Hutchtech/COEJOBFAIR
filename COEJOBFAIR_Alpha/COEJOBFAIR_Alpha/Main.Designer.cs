@@ -54,6 +54,9 @@ namespace COEJOBFAIR_Alpha
             this.btn_choose = new System.Windows.Forms.Button();
             this.cmb_choice = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.preRegisterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_preregon = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_preregoff = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.grp_1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -92,7 +95,8 @@ namespace COEJOBFAIR_Alpha
             this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.debugToolStripMenuItem,
             this.manualToolStripMenuItem,
-            this.employerToolStripMenuItem});
+            this.employerToolStripMenuItem,
+            this.preRegisterToolStripMenuItem});
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
             this.toolStripDropDownButton1.Size = new System.Drawing.Size(13, 20);
@@ -105,7 +109,7 @@ namespace COEJOBFAIR_Alpha
             this.databaseCheckToolStripMenuItem,
             this.resetToolStripMenuItem});
             this.debugToolStripMenuItem.Name = "debugToolStripMenuItem";
-            this.debugToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.debugToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.debugToolStripMenuItem.Text = "Debug";
             // 
             // debug_cnn_chck
@@ -132,14 +136,14 @@ namespace COEJOBFAIR_Alpha
             // manualToolStripMenuItem
             // 
             this.manualToolStripMenuItem.Name = "manualToolStripMenuItem";
-            this.manualToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.manualToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.manualToolStripMenuItem.Text = "Manual";
             this.manualToolStripMenuItem.Click += new System.EventHandler(this.manualToolStripMenuItem_Click);
             // 
             // employerToolStripMenuItem
             // 
             this.employerToolStripMenuItem.Name = "employerToolStripMenuItem";
-            this.employerToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.employerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.employerToolStripMenuItem.Text = "Employer";
             this.employerToolStripMenuItem.Click += new System.EventHandler(this.employerToolStripMenuItem_Click);
             // 
@@ -289,6 +293,30 @@ namespace COEJOBFAIR_Alpha
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 
+            // preRegisterToolStripMenuItem
+            // 
+            this.preRegisterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btn_preregon,
+            this.btn_preregoff});
+            this.preRegisterToolStripMenuItem.Name = "preRegisterToolStripMenuItem";
+            this.preRegisterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.preRegisterToolStripMenuItem.Text = "PreRegister";
+            // 
+            // btn_preregon
+            // 
+            this.btn_preregon.Name = "btn_preregon";
+            this.btn_preregon.Size = new System.Drawing.Size(152, 22);
+            this.btn_preregon.Text = "On";
+            this.btn_preregon.Click += new System.EventHandler(this.onToolStripMenuItem_Click);
+            // 
+            // btn_preregoff
+            // 
+            this.btn_preregoff.ForeColor = System.Drawing.Color.Red;
+            this.btn_preregoff.Name = "btn_preregoff";
+            this.btn_preregoff.Size = new System.Drawing.Size(152, 22);
+            this.btn_preregoff.Text = "Off";
+            this.btn_preregoff.Click += new System.EventHandler(this.btn_preregoff_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -349,5 +377,8 @@ namespace COEJOBFAIR_Alpha
         private System.Windows.Forms.TextBox txt_Grad_Year;
         private System.Windows.Forms.ToolStripMenuItem manualToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem preRegisterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btn_preregon;
+        private System.Windows.Forms.ToolStripMenuItem btn_preregoff;
     }
 }
