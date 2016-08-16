@@ -1,5 +1,5 @@
 ﻿using DYMO.Label.Framework;
-using SurveyMonkey;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,7 +25,7 @@ namespace COEJOBFAIR_Alpha
             data_employe[0] = txt_name_first.Text + " " + txt_name_last.Text;
             data_employe[1] = txt_organization.Text;
             data_employe[2] = txt_title.Text;
-            data_employe[3] = cmb_hotels.SelectedItem.ToString();
+            data_employe[3] = lst_hotels.SelectedItem.ToString();
             data_employe[4] = txt_other.Text;
             data_employe[5] = cmb_nights.SelectedItem.ToString();
             data_employe[6] = chck_box_alumni.CheckState.ToString(); //MAKE SURE THIS OUTPUTS TO "TRUE" or "FALSE" REF : 2A
@@ -85,18 +85,19 @@ namespace COEJOBFAIR_Alpha
             this.txt_other.Text = "";
             this.txt_other.Visible = false;
             this.txt_title.Text = "Title";
-            this.cmb_hotels.SelectedItem = "";
+            this.lst_hotels.SelectedItem = "";
             this.cmb_nights.SelectedItem = "";
             this.chck_box_alumni.Checked = false;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (this.cmb_hotels.SelectedText == "Other")
+            if (this.lst_hotels.SelectedText == "Other")
             {
                 this.txt_other.Visible = true;
             }
         }
+
 
     }
 }

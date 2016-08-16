@@ -38,10 +38,10 @@ namespace COEJOBFAIR_Alpha
             this.chck_box_alumni = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lst_hotels = new System.Windows.Forms.ListBox();
             this.cmb_nights = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_other = new System.Windows.Forms.TextBox();
-            this.cmb_hotels = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -87,7 +87,7 @@ namespace COEJOBFAIR_Alpha
             // submit
             // 
             this.submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.submit.Location = new System.Drawing.Point(378, 345);
+            this.submit.Location = new System.Drawing.Point(467, 494);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(226, 45);
             this.submit.TabIndex = 4;
@@ -121,19 +121,28 @@ namespace COEJOBFAIR_Alpha
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.lst_hotels);
             this.groupBox2.Controls.Add(this.cmb_nights);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.txt_other);
-            this.groupBox2.Controls.Add(this.cmb_hotels);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.chck_box_alumni);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(116, 220);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(877, 119);
+            this.groupBox2.Size = new System.Drawing.Size(877, 254);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Questions";
+            // 
+            // lst_hotels
+            // 
+            this.lst_hotels.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.lst_hotels.ItemHeight = 20;
+            this.lst_hotels.Location = new System.Drawing.Point(369, 46);
+            this.lst_hotels.Name = "lst_hotels";
+            this.lst_hotels.Size = new System.Drawing.Size(244, 104);
+            this.lst_hotels.TabIndex = 0;
             // 
             // cmb_nights
             // 
@@ -147,7 +156,7 @@ namespace COEJOBFAIR_Alpha
             "3",
             "2",
             "1"});
-            this.cmb_nights.Location = new System.Drawing.Point(370, 74);
+            this.cmb_nights.Location = new System.Drawing.Point(370, 161);
             this.cmb_nights.Name = "cmb_nights";
             this.cmb_nights.Size = new System.Drawing.Size(243, 28);
             this.cmb_nights.TabIndex = 12;
@@ -155,7 +164,7 @@ namespace COEJOBFAIR_Alpha
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 82);
+            this.label2.Location = new System.Drawing.Point(6, 164);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(309, 20);
             this.label2.TabIndex = 11;
@@ -169,25 +178,6 @@ namespace COEJOBFAIR_Alpha
             this.txt_other.TabIndex = 10;
             this.txt_other.Text = "Please Specify Other";
             this.txt_other.Visible = false;
-            // 
-            // cmb_hotels
-            // 
-            this.cmb_hotels.FormattingEnabled = true;
-            this.cmb_hotels.Items.AddRange(new object[] {
-            "",
-            "Overton",
-            "Holiday Inn",
-            "La Quinta Inn North",
-            "Staybridge Suites",
-            "Courtyard Marriott",
-            "Embassy Suites",
-            "Elegante",
-            "Other"});
-            this.cmb_hotels.Location = new System.Drawing.Point(370, 44);
-            this.cmb_hotels.Name = "cmb_hotels";
-            this.cmb_hotels.Size = new System.Drawing.Size(243, 28);
-            this.cmb_hotels.TabIndex = 9;
-            this.cmb_hotels.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -244,11 +234,11 @@ namespace COEJOBFAIR_Alpha
         private System.Windows.Forms.CheckBox chck_box_alumni;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox cmb_hotels;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_other;
         private System.Windows.Forms.ComboBox cmb_nights;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox lst_hotels;
     }
 }
