@@ -19,6 +19,9 @@ namespace COEJOBFAIR_Alpha
         {
             return openFileDialog1.FileName;
         }
+        /// <summary>Function watches text change in the RNum box.
+        /// <para>When the RNum is the correct length, it is cut to the correct characters then sent to fill info. </para>
+        /// </summary>
         private void txt_id_TextChanged(object sender, EventArgs e)
         {
             string cur = txt_id.Text;
@@ -77,27 +80,21 @@ namespace COEJOBFAIR_Alpha
             pBar1.Value = 100;
 
         }
-     
-        /// <summary>
-        /// populates the check info groupbox
+
+        /// <summary>Takes RNum and populates if in JobGrid
+        /// <para>Uses the txt_id field to get Rnum and uses that to check and make sure that the RNUM exists in Job Grid
+        /// if it is then send to Data_cnct.calls(RNUM) if not then send to different page. </para>
         /// </summary>
         public void fill_info()
         {
-            Data_cnct.calls main_call = new Data_cnct.calls(txt_id.Text);
+            Data_cnct.calls main_call = new Data_cnct.calls(txt_id.Text);  //This is where issue #8's solution will begin.
             txt_first_name.Text = main_call.get_crd_data()[0];
             txt_last_name.Text = main_call.get_crd_data()[1];
             txt_Grad_Month.Text = main_call.get_crd_data()[2];
             txt_Grad_Year.Text = main_call.get_crd_data()[3];
-        //    txt_major.Text = main_call.get_crd_data()[2];
-           // bool choice = String.Equals(txt_major.Text.ToString(), "FNDL");
-          //  if (choice)
-         //   {
-             //   this.groupBox1.Visible = true;
-         //   }
-        //else
-           // {
-                this.grp_1.Visible = true;  //This is all that is needed when ON NO MAJOR BRANCH
-          //  }
+       
+                this.grp_1.Visible = true;  
+          
             }
 
         public void PrintLabelUsingPrintJob()
@@ -156,12 +153,6 @@ namespace COEJOBFAIR_Alpha
             this.txt_id.Text = "";
             this.txt_id.Focus();
         }
-
-        //private void btn_choose_Click(object sender, EventArgs e)
-        //{
-        //    txt_major.Text = cmb_choice.Text.ToString();
-        //    this.grp_1.Visible = true;
-        //}
 
         private void btn_print_Click(object sender, EventArgs e)
         {
