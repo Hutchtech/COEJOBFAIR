@@ -246,7 +246,7 @@ namespace COEJOBFAIR_Alpha
             this.groupBox1.Controls.Add(this.cmb_choice);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox1.Location = new System.Drawing.Point(211, 132);
+            this.groupBox1.Location = new System.Drawing.Point(273, 132);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(485, 114);
             this.groupBox1.TabIndex = 20;
