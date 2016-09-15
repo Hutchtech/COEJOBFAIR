@@ -63,38 +63,73 @@ namespace COEJOBFAIR_Alpha
             {
                 connection_chck();
             }
+            public calls(String first, String last, String Rnum,bool pre_reg)
+            {
+                this.pre_reg = pre_reg;
+                AppendCall(first, last, Rnum);
+            }
             public string[] get_crd_data()
             {
                 return data_name_crd;
             }
+            public void AppendCall(String first, String last, String Rnum)
+            {
+                try
+                {
+                    odbc_cnn connection_1 = new odbc_cnn();
+                    OdbcCommand command = new OdbcCommand();
 
+                    command.CommandType = CommandType.Text;
+
+                    
+                    if (pre_reg)
+                    {
+                        command.CommandText = "INSERT INTO Job_Fair_Fall_2016 (ID, LastName, FirstName, Pre_Reg) VALUES ('" + Rnum + "', '" + last + "', '" + first + "', '1')";
+                    }
+                    else
+                    {
+                        command.CommandText = "INSERT INTO Job_Fair_Fall_2016 (ID, LastName, FirstName, Pre_Reg) VALUES ('" + Rnum + "', '" + last + "', '" + first + "','0')";
+                    }
+                    command.Connection = connection_1.getcnn();
+                    command.Connection.Open();
+                    command.ExecuteNonQuery();
+
+                    command.Connection.Close();
+                }
+                catch(Exception error)
+                {
+
+                    MessageBox.Show("Please Ask for help (Database Error)");
+                    MessageBox.Show(error.ToString());
+                }
+                
+            }
             public void mainDBCall()
             {
                 try
                 {
                     odbc_cnn connection_1 = new odbc_cnn();
-                    odbc_comand command_1 = new odbc_comand("SELECT * FROM Student_Job_Fair WHERE Student_Tech_ID = 'R" + Rnum + "';");
+                    odbc_comand command_1 = new odbc_comand("SELECT * FROM Job_Fair_Fall_2016 WHERE ID = 'R" + Rnum + "';");
 
                     command_1.getcmd().Connection = connection_1.getcnn();
                     connection_1.getcnn().Open();
                     OdbcDataReader reader = command_1.getcmd().ExecuteReader();
                     while (reader.Read())
                     {
-                        data_name_crd[0] = reader[0].ToString(); //First
+                        data_name_crd[2] = reader[2].ToString(); //First
                         data_name_crd[1] = reader[1].ToString(); //Last
-                        data_name_crd[2] = reader[2].ToString(); //Month
-                        data_name_crd[3] = reader[3].ToString(); //Year
-                        data_name_crd[4] = reader[4].ToString(); //Id
+                        data_name_crd[0] = reader[0].ToString(); //Id
                         data_name_crd[5] = reader[5].ToString(); //Pre
-                        data_name_crd[6] = reader[6].ToString(); //Fair
+                        
                     }
 
                     reader.Close();
                     connection_1.getcnn().Close();
                 }
-                catch
+                catch(Exception error)
                 {
                     MessageBox.Show("Please Ask for Help (Database Error)");
+                    MessageBox.Show(error.ToString());
                 }
                 try
                 {
@@ -104,11 +139,11 @@ namespace COEJOBFAIR_Alpha
                     command.CommandType = CommandType.Text;
                     if (pre_reg)
                     {
-                        command.CommandText = "UPDATE Student_Job_Fair SET  Pre_Register = '1' WHERE Student_Tech_ID = 'R" + Rnum + "';";
+                        command.CommandText = "UPDATE Job_Fair_Fall_2016 SET  Pre_Reg = '1' WHERE ID = 'R" + Rnum + "';";
                     }
                     else
                     {
-                        command.CommandText = "UPDATE Student_Job_Fair SET  Pre_Register = '0' WHERE Student_Tech_ID = 'R" + Rnum + "';";
+                        command.CommandText = "UPDATE Job_Fair_Fall_2016 SET  Pre_Reg = '0' WHERE ID = 'R" + Rnum + "';";
                     }
 
                     command.Connection = connection_1.getcnn();
@@ -119,7 +154,7 @@ namespace COEJOBFAIR_Alpha
                 }
                 catch
                 {
-                    MessageBox.Show("Please Ask for help (Database Error)");
+                    MessageBox.Show("Please Input your information");
                 }
             }
 
@@ -190,7 +225,7 @@ namespace COEJOBFAIR_Alpha
         public class Employe_calls
         {
             //SQL constants
-            const string employe_db = "Employers_2016_S";
+            const string employe_db = "Employers_2016_F";
 
             const string value_names = "('@name', '@organization', '@title', '@hotel', '@other', '@nights', '@alumni')";
             string[] value = new string[7] {"@name", "@organization", "@title", "@hotel", "@other", "@nights", "@alumni" };

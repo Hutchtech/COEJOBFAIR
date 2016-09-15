@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using System.Threading;
 using DYMO.Label.Framework;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace COEJOBFAIR_Alpha
 {
@@ -95,13 +96,23 @@ namespace COEJOBFAIR_Alpha
         public void fill_info()
         {
             Data_cnct.calls main_call = new Data_cnct.calls(txt_id.Text,Pre_Register);
-            txt_first_name.Text = main_call.get_crd_data()[0];
+            txt_first_name.Text = main_call.get_crd_data()[2];
             txt_last_name.Text = main_call.get_crd_data()[1];
-            txt_Grad_Month.Text = main_call.get_crd_data()[2];
-            txt_Grad_Year.Text = main_call.get_crd_data()[3];
+            string first_name = txt_first_name.Text;
+            Regex.Replace(first_name, @"\s+", "");
+            if (first_name == "")
+            {
+                no_jobGrid();
+            }
+            
         
             this.grp_1.Visible = true;  
             }
+        public void no_jobGrid()
+        {
+            btn_print.Visible = false;
+            button1.Visible = true;
+        }
 
         public void PrintLabelUsingPrintJob()
         {
@@ -117,7 +128,7 @@ namespace COEJOBFAIR_Alpha
 
                 // print three labels using label from TextLabel1.label
                 label1.SetObjectText("name", txt_first_name.Text.ToString() + " " + txt_last_name.Text.ToString());
-                label1.SetObjectText("Grad", txt_Grad_Month.Text.ToString() + " " + txt_Grad_Year.Text.ToString());
+                
                 //  label1.SetObjectText("MAJOR", txt_major.Text.ToString());
 
                 printJob.AddLabel(label1);
@@ -154,7 +165,7 @@ namespace COEJOBFAIR_Alpha
             this.txt_first_name.Text = "";
          //   this.txt_major.Text = "";
             this.txt_last_name.Text = "";
-            this.txt_Grad_Month.Text = "";
+            
             this.groupBox1.Visible = false;
             this.grp_1.Visible = false;
             this.txt_id.Text = "";
@@ -193,6 +204,12 @@ namespace COEJOBFAIR_Alpha
         {
             Pre_Register = false;
             this.btn_preregoff.ForeColor = System.Drawing.Color.Red;
+        }
+
+        private void Print_if_notfound(object sender, EventArgs e)
+        {
+            Data_cnct.calls main_call = new Data_cnct.calls(txt_first_name.Text,txt_last_name.Text,txt_id.Text,Pre_Register);
+            PrintLabelUsingPrintJob();
         }
     }
 }
