@@ -36,7 +36,7 @@ namespace COEJOBFAIR_Alpha
             }
             if (complete)
             {
-                
+                txt_id.Visible = false;
                 fill_info();
             }
         }
@@ -155,7 +155,7 @@ namespace COEJOBFAIR_Alpha
             status_cnn.Hide();
             status_cnn.BackColor = System.Drawing.Color.DarkGreen;
             grp_1.Visible = false;
-            groupBox1.Visible = false;
+            txt_id.Visible = true;
             pBar1.Hide();
             txt_id.Focus();
             reset();
@@ -166,10 +166,11 @@ namespace COEJOBFAIR_Alpha
          //   this.txt_major.Text = "";
             this.txt_last_name.Text = "";
             
-            this.groupBox1.Visible = false;
+            
             this.grp_1.Visible = false;
             this.txt_id.Text = "";
             this.txt_id.Focus();
+            txt_id.Visible = true;
         }
         #endregion
 
@@ -210,6 +211,11 @@ namespace COEJOBFAIR_Alpha
         {
             Data_cnct.calls main_call = new Data_cnct.calls(txt_first_name.Text,txt_last_name.Text,txt_id.Text,Pre_Register);
             PrintLabelUsingPrintJob();
+        }
+
+        private void grp_1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -50,15 +50,11 @@ namespace COEJOBFAIR_Alpha
             this.txt_first_name = new System.Windows.Forms.TextBox();
             this.txt_last_name = new System.Windows.Forms.TextBox();
             this.grp_1 = new System.Windows.Forms.GroupBox();
-            this.btn_print = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_choose = new System.Windows.Forms.Button();
-            this.cmb_choice = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btn_print = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.statusStrip1.SuspendLayout();
             this.grp_1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -239,67 +235,7 @@ namespace COEJOBFAIR_Alpha
             this.grp_1.TabStop = false;
             this.grp_1.Text = "Check Information";
             this.grp_1.Visible = false;
-            // 
-            // btn_print
-            // 
-            this.btn_print.Font = new System.Drawing.Font("Georgia", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.btn_print.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_print.Location = new System.Drawing.Point(145, 167);
-            this.btn_print.Name = "btn_print";
-            this.btn_print.Size = new System.Drawing.Size(184, 45);
-            this.btn_print.TabIndex = 20;
-            this.btn_print.Text = "Print";
-            this.btn_print.UseVisualStyleBackColor = true;
-            this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btn_choose);
-            this.groupBox1.Controls.Add(this.cmb_choice);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox1.Location = new System.Drawing.Point(273, 132);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(485, 114);
-            this.groupBox1.TabIndex = 20;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Choose Major";
-            this.groupBox1.Visible = false;
-            // 
-            // btn_choose
-            // 
-            this.btn_choose.Font = new System.Drawing.Font("Georgia", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.btn_choose.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_choose.Location = new System.Drawing.Point(144, 60);
-            this.btn_choose.Name = "btn_choose";
-            this.btn_choose.Size = new System.Drawing.Size(184, 45);
-            this.btn_choose.TabIndex = 21;
-            this.btn_choose.Text = "Choose";
-            this.btn_choose.UseVisualStyleBackColor = true;
-            // 
-            // cmb_choice
-            // 
-            this.cmb_choice.FormattingEnabled = true;
-            this.cmb_choice.Items.AddRange(new object[] {
-            "Computer Science",
-            "Mechanical Engineering",
-            "Electrical"});
-            this.cmb_choice.Location = new System.Drawing.Point(126, 26);
-            this.cmb_choice.Name = "cmb_choice";
-            this.cmb_choice.Size = new System.Drawing.Size(217, 28);
-            this.cmb_choice.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DarkRed;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(238, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(713, 228);
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
+            this.grp_1.Enter += new System.EventHandler(this.grp_1_Enter);
             // 
             // button1
             // 
@@ -314,6 +250,30 @@ namespace COEJOBFAIR_Alpha
             this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.Print_if_notfound);
             // 
+            // btn_print
+            // 
+            this.btn_print.Font = new System.Drawing.Font("Georgia", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.btn_print.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_print.Location = new System.Drawing.Point(145, 167);
+            this.btn_print.Name = "btn_print";
+            this.btn_print.Size = new System.Drawing.Size(184, 45);
+            this.btn_print.TabIndex = 20;
+            this.btn_print.Text = "Print";
+            this.btn_print.UseVisualStyleBackColor = true;
+            this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkRed;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(238, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(546, 94);
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -322,7 +282,6 @@ namespace COEJOBFAIR_Alpha
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(1405, 780);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grp_1);
             this.Controls.Add(this.pBar1);
             this.Controls.Add(this.status_db);
@@ -339,7 +298,6 @@ namespace COEJOBFAIR_Alpha
             this.statusStrip1.PerformLayout();
             this.grp_1.ResumeLayout(false);
             this.grp_1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -366,9 +324,6 @@ namespace COEJOBFAIR_Alpha
         private System.Windows.Forms.TextBox txt_last_name;
         private System.Windows.Forms.GroupBox grp_1;
         private System.Windows.Forms.Button btn_print;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox cmb_choice;
-        private System.Windows.Forms.Button btn_choose;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem manualToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employerToolStripMenuItem;
