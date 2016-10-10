@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eff9d6c3-a123-45f6-bd37-bd527570fa88" name="Default" comment="" />
+    <ignored path="COEJOBFAIR_Alpha.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="COEJOBFAIR_Alpha" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="DBcls.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../COEJOBFAIR_Alpha/Database/DBcls.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="32" />
+              <folding>
+                <marker date="1476121556409" expanded="true" signature="6:84" ph="..." />
+                <marker date="1476121556409" expanded="true" signature="121:8238" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="156:8232" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="195:553" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="293:485" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="526:542" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="582:1201" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="764:1064" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="1109:1191" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="1229:5410" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="1535:1661" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="1689:1752" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="1831:1949" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="1992:2057" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="2132:3256" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="3293:5377" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="5445:7389" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="5800:6373" ph="/// ..." />
+                <marker date="1476121556409" expanded="true" signature="6429:7351" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="7433:8226" ph="{...}" />
+                <marker date="1476121556409" expanded="true" signature="7490:7535" ph="/* ... */" />
+                <marker date="1476121556409" expanded="true" signature="7618:7662" ph="/* ... */" />
+                <marker date="1476121556409" expanded="true" signature="7744:7784" ph="/* ... */" />
+                <marker date="1476121556409" expanded="true" signature="7862:7906" ph="/* ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checks.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../COEJOBFAIR_Alpha/Database/checks.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+              <folding>
+                <marker date="1476125869152" expanded="true" signature="63:1802" ph="{...}" />
+                <marker date="1476125869152" expanded="true" signature="89:1800" ph="{...}" />
+                <marker date="1476125869152" expanded="true" signature="140:538" ph="{...}" />
+                <marker date="1476125869152" expanded="true" signature="575:1791" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Employer.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../COEJOBFAIR_Alpha/Employer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+              <folding>
+                <marker date="1476131125472" expanded="true" signature="6:274" ph="..." />
+                <marker date="1476131125472" expanded="true" signature="302:1923" ph="{...}" />
+                <marker date="1476131125472" expanded="true" signature="345:1921" ph="{...}" />
+                <marker date="1476131125472" expanded="true" signature="378:433" ph="{...}" />
+                <marker date="1476131125472" expanded="true" signature="496:1201" ph="{...}" />
+                <marker date="1476131125472" expanded="true" signature="1233:1672" ph="{...}" />
+                <marker date="1476131125472" expanded="true" signature="1753:1913" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrintHelpers.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../COEJOBFAIR_Alpha/Printing/PrintHelpers.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+              <folding>
+                <marker date="1476131194784" expanded="true" signature="64:2622" ph="{...}" />
+                <marker date="1476131194784" expanded="true" signature="96:2622" ph="{...}" />
+                <marker date="1476131194784" expanded="true" signature="326:1437" ph="{...}" />
+                <marker date="1476131194784" expanded="true" signature="1013:1150" ph="/* ... */" />
+                <marker date="1476131194784" expanded="true" signature="1501:2616" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../COEJOBFAIR_Alpha/Main.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+              <folding>
+                <marker date="1476131254477" expanded="true" signature="6:226" ph="..." />
+                <marker date="1476131254477" expanded="true" signature="254:5625" ph="{...}" />
+                <marker date="1476131254477" expanded="true" signature="293:5623" ph="{...}" />
+                <marker date="1476131254477" expanded="true" signature="367:422" ph="{...}" />
+                <marker date="1476131254477" expanded="true" signature="475:540" ph="{...}" />
+                <marker date="1476131254477" expanded="true" signature="549:753" ph="/// ..." />
+                <marker date="1476131254477" expanded="true" signature="821:1185" ph="{...}" />
+                <marker date="1476131254477" expanded="false" signature="1205:2396" ph="Debug" />
+                <marker date="1476131254477" expanded="true" signature="1284:1800" ph="{...}" />
+                <marker date="1476131254477" expanded="true" signature="1864:2385" ph="{...}" />
+                <marker date="1476131254477" expanded="true" signature="2407:2703" ph="/// ..." />
+                <marker date="1476131254477" expanded="true" signature="2735:3219" ph="{...}" />
+                <marker date="1476131254477" expanded="true" signature="3252:3347" ph="{...}" />
+                <marker date="1476131254477" expanded="true" signature="3360:4177" ph="Resets" />
+                <marker date="1476131254477" expanded="true" signature="3452:3813" ph="{...}" />
+                <marker date="1476131254477" expanded="true" signature="3844:4158" ph="{...}" />
+                <marker date="1476131254477" expanded="true" signature="4244:4384" ph="{...}" />
+                <marker date="1476131254477" expanded="true" signature="4464:4523" ph="{...}" />
+                <marker date="1476131254477" expanded="true" signature="4533:4640" ph="/// ..." />
+                <marker date="1476131254477" expanded="true" signature="4721:4839" ph="{...}" />
+                <marker date="1476131254477" expanded="true" signature="4915:5040" ph="{...}" />
+                <marker date="1476131254477" expanded="true" signature="5110:5235" ph="{...}" />
+                <marker date="1476131254477" expanded="true" signature="5303:5534" ph="{...}" />
+                <marker date="1476131254477" expanded="true" signature="5596:5617" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../../COEJOBFAIR_Alpha/Database/DBcls.cs" />
+        <option value="$PROJECT_DIR$/../../COEJOBFAIR_Alpha/Database/checks.cs" />
+        <option value="$PROJECT_DIR$/../../COEJOBFAIR_Alpha/Employer.cs" />
+        <option value="$PROJECT_DIR$/../../COEJOBFAIR_Alpha/Printing/PrintHelpers.cs" />
+        <option value="$PROJECT_DIR$/../../COEJOBFAIR_Alpha/Main.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="COEJOBFAIR_Alpha (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="COEJOBFAIR_Alpha (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="COEJOBFAIR_Alpha" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <option name="show-file-system" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/../../COEJOBFAIR_Alpha/COEJOBFAIR_Alpha.csproj" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../COEJOBFAIR_Alpha/bin/Debug/COEJOBFAIR_Alpha.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../COEJOBFAIR_Alpha/bin/Debug" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eff9d6c3-a123-45f6-bd37-bd527570fa88" name="Default" comment="" />
+      <created>1476109221747</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1476109221747</updated>
+      <workItem from="1476109224861" duration="7233000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7233000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors in solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UnitTesting" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24309815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../COEJOBFAIR_Alpha/Database/DBcls.resx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="40" column="71" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../COEJOBFAIR_Alpha/Database/DBcls.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <marker date="1476121556409" expanded="true" signature="6:84" ph="..." />
+            <marker date="1476121556409" expanded="true" signature="121:8238" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="156:8232" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="195:553" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="293:485" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="526:542" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="582:1201" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="764:1064" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="1109:1191" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="1229:5410" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="1535:1661" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="1689:1752" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="1831:1949" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="1992:2057" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="2132:3256" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="3293:5377" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="5445:7389" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="5800:6373" ph="/// ..." />
+            <marker date="1476121556409" expanded="true" signature="6429:7351" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="7433:8226" ph="{...}" />
+            <marker date="1476121556409" expanded="true" signature="7490:7535" ph="/* ... */" />
+            <marker date="1476121556409" expanded="true" signature="7618:7662" ph="/* ... */" />
+            <marker date="1476121556409" expanded="true" signature="7744:7784" ph="/* ... */" />
+            <marker date="1476121556409" expanded="true" signature="7862:7906" ph="/* ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../COEJOBFAIR_Alpha/Database/checks.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding>
+            <marker date="1476125869152" expanded="true" signature="63:1802" ph="{...}" />
+            <marker date="1476125869152" expanded="true" signature="89:1800" ph="{...}" />
+            <marker date="1476125869152" expanded="true" signature="140:538" ph="{...}" />
+            <marker date="1476125869152" expanded="true" signature="575:1791" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../COEJOBFAIR_Alpha/Employer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding>
+            <marker date="1476131125472" expanded="true" signature="6:274" ph="..." />
+            <marker date="1476131125472" expanded="true" signature="302:1923" ph="{...}" />
+            <marker date="1476131125472" expanded="true" signature="345:1921" ph="{...}" />
+            <marker date="1476131125472" expanded="true" signature="378:433" ph="{...}" />
+            <marker date="1476131125472" expanded="true" signature="496:1201" ph="{...}" />
+            <marker date="1476131125472" expanded="true" signature="1233:1672" ph="{...}" />
+            <marker date="1476131125472" expanded="true" signature="1753:1913" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../COEJOBFAIR_Alpha/Printing/PrintHelpers.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+          <folding>
+            <marker date="1476131194784" expanded="true" signature="64:2622" ph="{...}" />
+            <marker date="1476131194784" expanded="true" signature="96:2622" ph="{...}" />
+            <marker date="1476131194784" expanded="true" signature="326:1437" ph="{...}" />
+            <marker date="1476131194784" expanded="true" signature="1013:1150" ph="/* ... */" />
+            <marker date="1476131194784" expanded="true" signature="1501:2616" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../COEJOBFAIR_Alpha/Main.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <marker date="1476131254477" expanded="true" signature="6:226" ph="..." />
+            <marker date="1476131254477" expanded="true" signature="254:5625" ph="{...}" />
+            <marker date="1476131254477" expanded="true" signature="293:5623" ph="{...}" />
+            <marker date="1476131254477" expanded="true" signature="367:422" ph="{...}" />
+            <marker date="1476131254477" expanded="true" signature="475:540" ph="{...}" />
+            <marker date="1476131254477" expanded="true" signature="549:753" ph="/// ..." />
+            <marker date="1476131254477" expanded="true" signature="821:1185" ph="{...}" />
+            <marker date="1476131254477" expanded="false" signature="1205:2396" ph="Debug" />
+            <marker date="1476131254477" expanded="true" signature="1284:1800" ph="{...}" />
+            <marker date="1476131254477" expanded="true" signature="1864:2385" ph="{...}" />
+            <marker date="1476131254477" expanded="true" signature="2407:2703" ph="/// ..." />
+            <marker date="1476131254477" expanded="true" signature="2735:3219" ph="{...}" />
+            <marker date="1476131254477" expanded="true" signature="3252:3347" ph="{...}" />
+            <marker date="1476131254477" expanded="true" signature="3360:4177" ph="Resets" />
+            <marker date="1476131254477" expanded="true" signature="3452:3813" ph="{...}" />
+            <marker date="1476131254477" expanded="true" signature="3844:4158" ph="{...}" />
+            <marker date="1476131254477" expanded="true" signature="4244:4384" ph="{...}" />
+            <marker date="1476131254477" expanded="true" signature="4464:4523" ph="{...}" />
+            <marker date="1476131254477" expanded="true" signature="4533:4640" ph="/// ..." />
+            <marker date="1476131254477" expanded="true" signature="4721:4839" ph="{...}" />
+            <marker date="1476131254477" expanded="true" signature="4915:5040" ph="{...}" />
+            <marker date="1476131254477" expanded="true" signature="5110:5235" ph="{...}" />
+            <marker date="1476131254477" expanded="true" signature="5303:5534" ph="{...}" />
+            <marker date="1476131254477" expanded="true" signature="5596:5617" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
