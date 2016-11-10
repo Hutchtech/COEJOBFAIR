@@ -31,14 +31,15 @@ namespace COEJOBFAIR_Alpha
             var cur = txt_id.Text;
             var length = cur.Length;
             var complete = false;
+            txt_id.Visible = false  //After the first value from the car is inputted make the text box not visible
             if (length == 15)
             {
-                txt_id.Text = cur.Substring(1, 8);
+                txt_id.Text = cur.Substring(1, 8);  //The 1st through 8th character is the R-Num
                 complete = true;
             }
             if (!complete) return;
-            txt_id.Visible = false;
-            fill_info();
+            
+            fill_info();  ///Make the call to the DB with the Rnum
         }
 
 
@@ -162,9 +163,9 @@ namespace COEJOBFAIR_Alpha
         /// </summary>
         private void employerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var form = new Employer();
-            this.Visible = false;
-            form.Show();
+            var form = new Employer();  //TODO: Send 'this' to the this form. So when you close the other form you can also close this one. 
+            this.Visible = false;       //This (^^) will solve issue #17 Emplpoyer memory Leak
+            form.Show();  
         }
 
         private void onToolStripMenuItem_Click(object sender, EventArgs e)
@@ -173,22 +174,18 @@ namespace COEJOBFAIR_Alpha
             this.btn_preregon.ForeColor = System.Drawing.Color.Green;
         }
 
-        private void btn_preregoff_Click(object sender, EventArgs e)
+        private void btn_preregoff_Click(object sender, EventArgs e)  //Pre-Register button is off
         {
             _isPreRegister = false;
             this.btn_preregoff.ForeColor = System.Drawing.Color.Red;
         }
 
-        private void Print_if_notfound(object sender, EventArgs e)
+        private void Print_if_notfound(object sender, EventArgs e) //Prints even if name not found in database
         {
             var mainCall = new DataCnct.Calls(txt_first_name.Text,txt_last_name.Text,txt_id.Text,_isPreRegister);
-            Printing.PrintHelpers.PrintLabelUsingPrintJob(txt_first_name + " " + txt_last_name);
+            Printing.PrintHelpers.PrintLabelUsingPrintJob(txt_first_name + " " + txt_last_name);  
         }
 
-        private void grp_1_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 
