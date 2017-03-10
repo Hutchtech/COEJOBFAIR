@@ -1,3 +1,5 @@
+Replaced by https://github.com/the-pat/WcoeJobFairRegistration 
+
 # COEJOBFAIR
 COE Job Fair Application
 
